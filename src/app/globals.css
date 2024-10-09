@@ -1,27 +1,30 @@
+
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+html, body {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+/* Selecciona los "dots" del carrusel y ajusta su margen superior para bajarlos */
+.custom-carousel .carousel .control-dots {
+  margin-top: 20px; /* Ajusta el valor para bajar los dots según necesites */
+  bottom: 20px; /* Cambia la posición de los dots hacia abajo */
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+/* También puedes personalizar su tamaño y apariencia */
+.custom-carousel .carousel .control-dots .dot {
+  width: 15px;
+  height: 15px;
+  background-color: #999; /* Cambia el color de los dots */
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+.custom-carousel .carousel .control-dots .dot.selected {
+  background-color: #333; /* Cambia el color del dot activo */
 }
+

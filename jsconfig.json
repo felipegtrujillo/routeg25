@@ -1,0 +1,9 @@
+{
+    "compilerOptions": {
+      "baseUrl": ".",  // Establece la raíz del proyecto como punto base
+      "paths": {
+        "@/*": ["./*"]  // Configura el alias @ para la raíz del proyecto
+      }
+    }
+  }
+  
