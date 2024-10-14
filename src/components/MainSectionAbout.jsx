@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 import { SectionWrapper } from '../hoc';
 import { fadeIn } from '../utils/motion.js';
 
-import img1 from '../../public/assets/img/cabañas/araucaria/2.jpeg';
+import img1 from '../../public/assets/img/cabanas/araucaria/2.jpeg';
 
 function MainSectionAbout() {
   return (

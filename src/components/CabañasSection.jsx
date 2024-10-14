@@ -7,9 +7,9 @@ import Link from "next/link";
 
 import { motion } from 'framer-motion';
 import { fadeIn } from '../utils/motion.js';
-import img1 from '../../public/assets/img/cabañas/cabaña4.jpg';
-import img2 from '../../public/assets/img/cabañas/cabaña2_2.jpg';
-import img3 from '../../public/assets/img/cabañas/cabaña3.jpg';
+import img1 from '../../public/assets/img/cabanas/cabana4.jpg';
+import img2 from '../../public/assets/img/cabanas/cabana2_2.jpg';
+import img3 from '../../public/assets/img/cabanas/cabana3.jpg';
 import { SectionWrapper } from '../hoc/index.js';
 
 const images = [

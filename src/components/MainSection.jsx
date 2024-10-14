@@ -6,7 +6,7 @@ import { SectionWrapper } from "../hoc/index.js";
 import { fadeIn } from "../utils/motion.js";
 
 import img1 from "../../public/assets/img/restaurant/cocteleria2.jpg";
-import img2 from "../../public/assets/img/cabañas/cabaña1.jpg";
+import img2 from "../../public/assets/img/cabanas/cabana1.jpg";
 import img3 from "../../public/assets/img/menu/bsd.jpg";
 
 import { useEffect, useState, useRef } from "react"; // Importa useState y useEffect
