@@ -1,5 +1,8 @@
 import { Carousel } from 'react-responsive-carousel';
+
 import "react-responsive-carousel/lib/styles/carousel.min.css";
+
+import Image from 'next/image';
 
 const images = [
   "/assets/img/cabañas/araucaria/image00001.jpeg",
@@ -30,7 +33,7 @@ const CarouselComponent = () => {
       >
         {images.map((image, index) => (
           <div className="flex justify-center items-center h-[70vh] w-[80%] gap-5" key={index}>
-            <img src={image} alt={`Image ${index + 1}`} className="object-cover" />
+            <image src={image} alt={`Image ${index + 1}`} className="object-cover" />
           </div>
         ))}
       </Carousel>

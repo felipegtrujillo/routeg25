@@ -1,4 +1,4 @@
-import React from 'react';
+
 import { motion } from 'framer-motion';
 import { SectionWrapper } from '../hoc';
 
@@ -23,7 +23,7 @@ const Gallery = () => {
     >
 
       {images.map((img, index) => (
-              <motion.div  className="w-full h-[340px] object-cover "
+              <motion.div key={index+1}  className="w-full h-[340px] object-cover "
               variants={fadeImg("right", "spring", index * 0.01 , 3)}>
         <Image
           key={index}
