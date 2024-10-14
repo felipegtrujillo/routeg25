@@ -52,13 +52,13 @@ function ParallaxCabanasSections({
 
       {/* TEXTOS */}
       <div className="absolute inset-0 flex flex-col justify-center items-start z-10 text-white pl-8 lg:pl-16 w-[90%] md:w-[70%] lg:w-[40%]">
-        <h2 className="text-[6vw] md:text-[4vw] lg:text-[2vw] text-right py-2  font-semibold">
+        <h2 className="text-[2rem] md:text-[2.5] lg:text-[2.6rem] text-right py-2  font-semibold">
           {title}
         </h2>
-        <h3 className="text-[7vw] md:text-[4vw] lg:text-[2vw] text-left ">
+        <h3 className="text-[1.8rem] md:text-[2rem] lg:text-[2.2rem] text-left ">
           {subtitle}
         </h3>
-        <p className="text-[2.8vw] md:text-[1.8vw] lg:text-[1.2vw] text-justify ">
+        <p className="text-[1.2rem] md:text-[1.5rem] lg:text-[1.2rem] text-justify ">
           {paragraph}
         </p>
         <div className="flex justify-center items-center gap-4 py-10">

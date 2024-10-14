@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 
 function ReservasFooter() {
   return (
- <div className="flex flex-col justify-start items-center h-[45vh] sm:h-[30vh] w-screen text-white bg-black border-b-0.2 border-gray-400 overflow-hidden">
+ <div className="flex flex-col justify-start items-center h-[55vh] sm:h-[30vh] w-screen text-white bg-black border-b-0.2 border-gray-400 overflow-hidden">
      
      <div className="flex justify-start items-center pl-6 md:pl-8 lg:pl-16 h-[50vh] w-full">
          <h2 className="text-5xl"> No esperes más, reserva hoy mismo.</h2>

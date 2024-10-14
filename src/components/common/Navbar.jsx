@@ -44,7 +44,7 @@ function Navbar() {
 
      {/* Burger Button */}
       <div className="flex items-end justify-center relative left-[16vw] ">
-        <button className="block lg:hidden p-4 text-white focus:outline-none" onClick={toggleMenu} aria-label="abrir menu">
+        <button className="block lg:hidden p-4 text-white focus:outline-none" onClick={toggleMenu} aria-label="">
           <svg className="w-6 h-6 sm:w-8 sm:h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16m-7 6h7" />
           </svg>
