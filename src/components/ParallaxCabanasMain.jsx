@@ -34,7 +34,7 @@ function ParallaxCabanasMain({
   return (
     <div
       ref={container}
-      className="relative flex items-center justify-center w-screen h-full  overflow-hidden"
+      className="relative flex items-center justify-center w-screen h-screen  overflow-hidden"
       style={{
         clipPath: "polygon(0% 0, 100% 0%, 100% 100%, 0 100%)",
         position: "relative",

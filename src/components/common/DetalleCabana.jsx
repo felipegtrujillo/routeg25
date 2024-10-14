@@ -8,17 +8,17 @@ import { fadeIn } from "../../utils/motion.js";
 
 function DetalleCabana({ idCabana, titulo, caracteristicas, checkIn, checkOut, lateCheckOut, precioCabaña, precioPersona, precioMascota, cabañas }) {
   return (
- <div id={idCabana} className="flex flex-col justify-center items-center py-20 max-w-screen">
+ <div id={idCabana} className="flex flex-col justify-center items-center py-10 max-w-screen min-h-screen">
 
    {/* Titulo */}
-    <div className="flex w-[80%] h-32 ">
+    <div className="flex w-[80%] h-[30%] py-20">
         <h2 className=" text-custom-yellow text-4xl flex justify-center text-center ">
             {titulo}
         </h2>
     </div>
 
    {/* Detalles */}
-     <div className="flex flex-col justify-center items-start md:flex md:flex-row w-[80%] gap-[4rem] font-medium text-gray-400 ">
+     <div className="flex flex-col justify-center items-start md:flex md:flex-row w-[80%] gap-[4rem] font-medium text-gray-400 h-[70%] ">
         <div className="flex flex-col w-[100%] md:w-[24%]">
             <h3 className="text-lg text-left">El Espacio</h3>
             <ul className="mt-4 ">
