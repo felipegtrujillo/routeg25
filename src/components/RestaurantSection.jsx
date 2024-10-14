@@ -2,7 +2,7 @@
 'use client';
 
 import Image from "next/legacy/image";
-import Restauranticons from '../components/common/RestaurantIcons.jsx';
+import Restauranticons from '../components/common/Restauranticons.jsx';
 import Serviceicons from '../components/common/Serviceicons.jsx';
 import ButtonVerCarta from './common/ButtonVerCarta.jsx';
 import ButtonReservarMesa from '../components/common/ButtonReservarMesa.jsx';
