@@ -1,6 +1,6 @@
 'use client';
 
-import Image from 'next/image';
+import Image from "next/legacy/image";
 import React, { useState, useEffect } from 'react';
 import Socialicon from './Socialicon';
 import { motion } from "framer-motion";

@@ -1,4 +1,4 @@
-import React from 'react';
+
 import { BiSolidDrink } from 'react-icons/bi';
 import { IoRestaurant } from 'react-icons/io5';
 import { MdOutlineFoodBank, MdTableRestaurant } from 'react-icons/md';

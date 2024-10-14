@@ -2,12 +2,11 @@
 "use client";
 
 import React, { useEffect, useRef } from "react";
-import Image from "next/image";
+import Image from "next/legacy/image";
 import Link from "next/link.js";
 
 import { motion, useScroll, useTransform } from "framer-motion";
 
-import { SectionWrapper } from "../hoc/index.js";
 
 import ButtonReservarCabana from "./common/ButtonReservarCabana.jsx";
 
@@ -47,7 +46,8 @@ function ParallaxCabanasMain({
           style={{ y }} // Aplica la transformación basada en el scroll
           className="relative w-full h-full filter contrast-10 saturate-100 brightness-20  opacity-50"
         >
-          <Image src={image} alt="image" style={{ objectFit: "cover" }} fill />
+          <Image src={image} alt="image" layout="fill" 
+           sizes="(max-width: 1280px) 100vw, (max-width: 768x) 50vw, 33vw" />
         </motion.div>
       </div>
 

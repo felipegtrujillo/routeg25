@@ -1,5 +1,5 @@
 'use client'
-import Image from 'next/image';
+import Image from "next/legacy/image";
 import { motion } from 'framer-motion';
 import { SectionWrapper } from '../hoc';
 import { fadeIn } from '../utils/motion.js';

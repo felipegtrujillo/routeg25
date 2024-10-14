@@ -23,7 +23,7 @@ function HeroSections( {name, text1, text2, text3, buttonName, idSection}  ) {
             variants={titleVariants}
             initial="hidden"
             animate="visible"
-            transition={{ duration: 4, type: "spring" }}
+            transition={{ duration: 0.5, type: "spring", stiffness: 20 }}  // Reducido a 1.5s, ajuste de 'spring'
           >
              {name}
           </motion.h1>

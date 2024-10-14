@@ -4,12 +4,12 @@
 
 import Navbar from '../../../components/common/Navbar.jsx';
 import Footer from '../../../components/common/Footer.jsx';
-import ParallaxCabanasMain from "@/components/ParallaxCabanasMain.jsx";
+import ParallaxCabanasMain from "../../../components/ParallaxCabanasMain.jsx";
 
-import DetalleCabana from "@/components/common/DetalleCabana.jsx";
-import CarouselCabanas from "@/components/common/CarouselCabanas.jsx";
+import DetalleCabana from "../../../components/common/DetalleCabana.jsx";
+import CarouselCabanas from "../../../components/common/CarouselCabanas.jsx";
 
-import ReservasFooter from '@/components/common/ReservasFooter.jsx';
+import ReservasFooter from '../../../components/common/ReservasFooter.jsx';
 
 export default function Page() {
 
@@ -35,7 +35,7 @@ const caracteristicas = [
   { nombre: 'Comedor', valor: "Living/comedor" },
   { nombre: 'Living', valor: "Living/comedor" },
   { nombre: 'Baños', valor: "1" },
-  { nombre: 'Calefacción', valor: "Leña o Electrica" },
+  { nombre: 'Calefacción', valor: "Leña o Electrica (segun elección de cabaña)" },
   { nombre: 'Televisión', valor: "1" },
   { nombre: 'Barra', valor: "No tiene" },
   { nombre: 'Sala de juegos', valor: "No tiene"},
@@ -52,7 +52,7 @@ const caracteristicas = [
         image="/assets/img/cabañas/duplex.jpg"
         title="Deluxe"
         subtitle="Hasta 2 personas"
-        paragraph="En la calchona contamos con 11 cabañas Deluxe. Equipadas con  Con cama matrimonial, TV por cable, baño en suite, y calefacción a leña (primera carga de leña de cortesía en invierno)."
+        paragraph="Contamos con 11 cabañas dobles independientes, ideal para parejas. Con cama matrimonial con ropa de cama, TV satelital por cable, baño en suite y calefacción a leña ó eléctrica según elección de cabaña. Incluye cocina full equipada, quincho y estacionamiento privado."
         buttonLink="#deluxe"
         buttonText="Ver Prestaciones"
         tipo="Deluxe"
@@ -62,7 +62,7 @@ const caracteristicas = [
 
      <DetalleCabana idCabana="deluxe" titulo="Ideal para parejas" caracteristicas={caracteristicas}
                      checkIn="A partir de las 12:00 hasta las 19:00" checkOut="Hasta las 12:00" 
-                     lateCheckOut="Valor 50% de valor de 1 noche, salida hasta las 19:00" precioAdulto="$100.000" precioMascota="10.000" cabañas={cabañas}/>
+                     lateCheckOut="Valor 50% de valor de 1 noche, salida hasta las 19:00" precioCabaña="$100.000" precioMascota="$20.000" cabañas={cabañas}/>
 
 
      <CarouselCabanas/>

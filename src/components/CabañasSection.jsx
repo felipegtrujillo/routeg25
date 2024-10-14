@@ -15,7 +15,7 @@ import { SectionWrapper } from '../hoc/index.js';
 const images = [
   { src: img1, link:"deluxe", alt: "Deluxe", text: "Deluxe", additionalText: "Para 2 personas" },
   { src: img2, link:"bungalow",alt: "Bungalow",text: "Bungalow", additionalText: "De 3 a 7 personas" },
-  { src: img3, link:"villla", alt: "Villa", text: "Villa", additionalText: "Hasta 12 personas" },
+  { src: img3, link:"villa", alt: "Villa", text: "Villa", additionalText: "Hasta 12 personas" },
 ];
 
 function CabañasSection() {

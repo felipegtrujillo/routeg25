@@ -1,7 +1,7 @@
 // src/components/Navbar.jsx
 'use client';
 
-import Image from 'next/image';
+import Image from "next/legacy/image";
 import Restauranticons from '../components/common/RestaurantIcons.jsx';
 import Serviceicons from '../components/common/Serviceicons.jsx';
 import ButtonVerCarta from './common/ButtonVerCarta.jsx';

@@ -13,19 +13,21 @@ const titleVariants = {
   visible: { opacity: 1, y: 0 },
 };
 
+
+
 function Hero() {
   return (
 
         <div className="flex flex-col justify-center items-center py-[40vh]">
-            <motion.h1
-              className="mt-6 uppercase text-[2.5rem] md:text-[3rem] text-gray-300 font-semibold text-center font-playfair"
-              variants={titleVariants}
-              initial="hidden"
-              animate="visible"
-              transition={{ duration: 3, type: "spring"}}
-            >
-              La Calchona
-            </motion.h1>
+        <motion.h1
+          className="mt-6 uppercase text-[2.5rem] md:text-[3rem] text-gray-300 font-semibold text-center font-playfair"
+          variants={titleVariants}
+          initial="hidden"
+          animate="visible"
+          transition={{ duration: 0.5, type: "spring", stiffness: 20 }}  // Reducido a 1.5s, ajuste de 'spring'
+        >
+          La Calchona
+        </motion.h1>
 
              <DynamicP text1="Descubre su Cocina y Naturaleza" text2="Restaurant & Cabañas " text3="A los Pies de la Montaña"></DynamicP>
 

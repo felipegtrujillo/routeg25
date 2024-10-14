@@ -1,6 +1,6 @@
 "use client";
 
-import Image from "next/image";
+import Image from "next/legacy/image";
 import { motion, useInView, useScroll, useTransform } from "framer-motion";
 import { SectionWrapper } from "../hoc/index.js";
 import { fadeIn } from "../utils/motion.js";
@@ -69,7 +69,7 @@ function Section() {
           className="absolute top-[57%] left-[2%] sm:left-[8%] lg:left-[10%] xl:left-[0%] h-[25vh] w-[40vw] md:h-[30vh] md:w-[28.5vw] lg:h-[30vh] lg:w-[22.5vw] xl:h-[40vh] xl:w-[15vw] z-[2]" // Ajuste de posición y tamaño
           style={{ y: md }}
         >
-          <Image src={img1} alt="La calchona 1" placeholder="blur" fill />
+          <Image src={img1} alt="La calchona 1"  fill />
         </motion.div>
 
         {/* Segunda imagen */}

@@ -89,8 +89,8 @@ const Footer = () => {
                     <ul
                       className={`flex flex-col justify-center items-center lg:items-start text-[1rem]  text-white `}
                     >
-                      <li><Link href="/" className="block px-2 py-2 text-center hover:text-gray-400  ">Terminos y condiciones</Link></li>
-                      <li><Link href="/restaurant" className="block px-2 py-2 text-center hover:text-gray-400">FAQ</Link></li>
+                      <li><Link href="/ayuda/terminos" className="block px-2 py-2 text-center hover:text-gray-400  ">Terminos y condiciones</Link></li>
+                      <li><Link href="/ayuda/FAQ" className="block px-2 py-2 text-center hover:text-gray-400">FAQ</Link></li>
 
                     </ul>
                     </div>

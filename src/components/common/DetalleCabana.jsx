@@ -1,12 +1,12 @@
 "use client";
 
-import Image from "next/image";
+import Image from "next/legacy/image";
 
 import { motion } from "framer-motion";
 import { fadeIn } from "../../utils/motion.js";
 
 
-function DetalleCabana({ idCabana, titulo, caracteristicas, checkIn, checkOut, lateCheckOut, precioAdulto, precioMascota, cabañas }) {
+function DetalleCabana({ idCabana, titulo, caracteristicas, checkIn, checkOut, lateCheckOut, precioCabaña, precioPersona, precioMascota, cabañas }) {
   return (
  <div id={idCabana} className="flex flex-col justify-center items-center py-32 max-w-screen">
 
@@ -53,7 +53,9 @@ function DetalleCabana({ idCabana, titulo, caracteristicas, checkIn, checkOut, l
           <div>
             <h3 className="text-lg text-left">Precios</h3>
             <ul className="mt-4">
-                  <li className="text-sm text-left font-bold text-black mb-1"> Por persona: {precioAdulto}</li>
+                  <li className="text-sm text-left font-bold text-black mb-1"> 
+                    {precioCabaña ? `Por cabaña: ${precioCabaña}` : precioPersona? `Precio Persona: ${precioPersona}` : 'No disponible'}
+                  </li>
                   <li className="text-sm text-left font-bold text-black mb-1"> Por mascota: {precioMascota}</li>
             </ul>
         </div>
