@@ -8,7 +8,7 @@ import { fadeIn } from "../../utils/motion.js";
 
 function DetalleCabana({ idCabana, titulo, caracteristicas, checkIn, checkOut, lateCheckOut, precioCabaña, precioPersona, precioMascota, cabañas }) {
   return (
- <div id={idCabana} className="flex flex-col justify-center items-center py-32 max-w-screen">
+ <div id={idCabana} className="flex flex-col justify-center items-center py-20 max-w-screen">
 
    {/* Titulo */}
     <div className="flex w-[80%] h-32 ">

@@ -1,6 +1,5 @@
 // app/page.tsx (o page.ts)
 
-'use client'
 
 import Navbar from '../../../components/common/Navbar.jsx';
 import Footer from '../../../components/common/Footer.jsx';
@@ -10,8 +9,24 @@ import DetalleCabana from "../../../components/common/DetalleCabana.jsx";
 import CarouselCabanas from "../../../components/common/CarouselCabanas.jsx";
 
 import ReservasFooter from '../../../components/common/ReservasFooter.jsx';
+import axios from 'axios';
 
-export default function Page() {
+export default async function Page() {
+
+  let dataFiltrada = [];
+  try {
+    const res = await axios.get('https://www.lacalchona.cl/wp-json/wp/v2/cabanas?acf_format=standard');
+    dataFiltrada = res.data.map(item => ({
+      imagen1: item.acf ? item.acf.detalle1_bungalow : 'imagen no disponible',
+      imagen2: item.acf ? item.acf.detalle2_bungalow : 'imagen no disponible',
+      imagen3: item.acf ? item.acf.detalle3_bungalow : 'imagen no disponible',
+      imagen4: item.acf ? item.acf.detalle4_bungalow : 'imagen no disponible',
+      imagen5: item.acf ? item.acf.detalle5_bungalow : 'imagen no disponible',
+      imagen6: item.acf ? item.acf.detalle6_bungalow : 'imagen no disponible',
+    }));
+  } catch (error) {
+    console.error("Error al obtener datos:", error);
+  }
 
     const cabañas = [
       'Nogal (para 3 personas)',
@@ -36,13 +51,22 @@ export default function Page() {
     { nombre: 'Estacionamiento', valor: "1" }
   ];
 
+  const images = dataFiltrada.length > 0 ? [
+    dataFiltrada[0].imagen1,
+    dataFiltrada[0].imagen2,
+    dataFiltrada[0].imagen3,
+    dataFiltrada[0].imagen4,
+    dataFiltrada[0].imagen5,
+    dataFiltrada[0].imagen6,
+  ] : [];
+
   return (
     <div className="relative z-0"> 
 
      <div className="relative  bg-no-repeat bg-center h-screen  z-50"> 
        <Navbar/>
        <ParallaxCabanasMain
-        image="/assets/img/cabañas/familiar.jpg"
+        image="/assets/img/cabanas/familiar.jpg"
         title="Bungalow"
         subtitle="Hasta 4 personas"
         paragraph="Descubre nuestros 3 hermosos bungalows, perfectos para familias o pequeños grupos. Equipadas con 2 cómodas habitaciones, Camas matrimoniales y camas de 1 1/2 plaza todas con su ropa de cama, baño completo, TV satelital, calefacción a leña o eléctrica (según elección), cocina totalmente equipadas, quincho y estacionamiento privado."
@@ -56,7 +80,7 @@ export default function Page() {
      <DetalleCabana idCabana="bungalow" titulo="Ideal para Familias o grupos pequeños" caracteristicas={caracteristicas}
                      checkIn="A partir de las 12:00 hasta las 19:00" checkOut="Hasta las 12:00" 
                      lateCheckOut="Valor 50% de valor de 1 noche, salida hasta las 19:00" precioAdulto="$110.000 - $120.000" precioMascota="20.000" cabañas={cabañas}/>
-     <CarouselCabanas/>
+     <CarouselCabanas images={images}/>
 
      <ReservasFooter/>
 

@@ -1,8 +1,13 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-    images: {
-      domains: ['lacalchona.cl', 'otro-dominio.com'], // Agrega aquí los dominios de tus imágenes
-    },
+  images: {
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'lacalchona.cl',
+      },
+    ],
+  },
     webpack(config) {
       config.module.rules.push({
         test: /\.svg$/,

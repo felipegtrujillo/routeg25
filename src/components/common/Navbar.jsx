@@ -1,12 +1,9 @@
 'use client';
 
-import Image from "next/legacy/image";
 import React, { useState, useEffect } from 'react';
 import Socialicon from './Socialicon';
 import { motion } from "framer-motion";
-import { SectionWrapper } from '../../hoc/index.js';
 import Link from 'next/link'; // Importa el componente Link
-import logo from '../../../public/assets/img/lacalchona.svg';
 import LogoSVG from '../common/LogoSVG';
 
 function Navbar() {
@@ -16,25 +13,25 @@ function Navbar() {
 
   const toggleMenu = () => setIsOpen(!isOpen);
 
-  const handleScroll = () => {
-    const currentScrollY = window.scrollY;
-
-    if (currentScrollY < lastScrollY) {
-      setShowNavbar(true);
-    } else {
-      setShowNavbar(false);
-    }
-
-    setLastScrollY(currentScrollY);
-  };
-
   useEffect(() => {
+    const handleScroll = () => {
+      const currentScrollY = window.scrollY;
+
+      if (currentScrollY < lastScrollY) {
+        setShowNavbar(true);
+      } else {
+        setShowNavbar(false);
+      }
+
+      setLastScrollY(currentScrollY);
+    };
+
     window.addEventListener('scroll', handleScroll);
 
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };
-  }, [lastScrollY]);
+  }, [lastScrollY]); 
 
   return (
     <nav className={`fixed top-0 w-full h-[15vh]  z-50 bg-black bg-opacity-70 flex justify-between items-center px-3 md:p-12 md:px-8 lg:p-12 text-white transition-transform duration-300 ease-in-out
@@ -47,7 +44,7 @@ function Navbar() {
 
      {/* Burger Button */}
       <div className="flex items-end justify-center relative left-[16vw] ">
-        <button className="block lg:hidden p-4 text-white focus:outline-none" onClick={toggleMenu}>
+        <button className="block lg:hidden p-4 text-white focus:outline-none" onClick={toggleMenu} aria-label="abrir menu">
           <svg className="w-6 h-6 sm:w-8 sm:h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16m-7 6h7" />
           </svg>
