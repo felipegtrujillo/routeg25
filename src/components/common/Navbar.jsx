@@ -33,6 +33,8 @@ function Navbar() {
     };
   }, [lastScrollY]); 
 
+  
+
   return (
     <nav className={`fixed top-0 w-full h-[15vh]  z-50 bg-black bg-opacity-70 flex justify-between items-center px-3 md:p-12 md:px-8 lg:p-12 text-white transition-transform duration-300 ease-in-out
      ${showNavbar ? 'translate-y-0' : '-translate-y-full'}`}>
@@ -43,23 +45,34 @@ function Navbar() {
       </div>
 
      {/* Burger Button */}
-      <div className="flex items-end justify-center relative left-[16vw] ">
-        <button className="block lg:hidden p-4 text-white focus:outline-none" onClick={toggleMenu} aria-label="">
+      <div className="flex items-end justify-center relative left-[14.5vw] ">
+      <button className="block lg:hidden p-4 text-white focus:outline-none" onClick={toggleMenu} aria-label="Toggle menu">
+        {isOpen ? (
+          // X icon
+          <svg className="w-6 h-6 sm:w-8 sm:h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 6l12 12M6 18L18 6" />
+          </svg>
+        ) : (
+          // Burger icon
           <svg className="w-6 h-6 sm:w-8 sm:h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16m-7 6h7" />
           </svg>
-        </button>
+        )}
+     </button>
+
       </div>
 
       {/* Navigation Menu */}
-      <ul className={`relative lg:flex lg:justify-center text-md lg:bg-transparent bg-black bg-opacity-70
-        lg:translate-y-0 transition-transform transform gap-8
-        ${isOpen ? 'translate-y-[128px] translate-x-[-6vw]' : 'translate-y-[-600vh] translate-x-[-40px]'}  `}>
+      <motion.ul 
+
+       className={`relative px-2 lg:px-0 lg:flex lg:justify-center text-md lg:bg-transparent bg-black bg-opacity-70
+        lg:translate-y-0 transition-transform transform ease-in-out duration-500 gap-8
+        ${isOpen ? 'translate-y-[128px] translate-x-[-6vw] md:translate-x-[-11vw]' : 'translate-y-[-600vh] translate-x-[-40px]'}  `}>
         <li><Link href="/" className=" block  py-2 text-center hover:text-gray-400">Inicio</Link></li>
         <li><Link href="/restaurant" className="block  py-2 text-center hover:text-gray-400">Restaurant</Link></li>
         <li><Link href="/cabanas" className="block text-center py-2 hover:text-gray-400">Cabañas</Link></li>
         <li><Link href="/about" className="block py-2 text-center hover:text-gray-400">Sobre Nosotros</Link></li>
-      </ul>
+      </motion.ul>
 
       {/* Boton contacto */}
       <div className="flex items-center justify-center  gap-8">
@@ -73,8 +86,6 @@ function Navbar() {
             </motion.button>
         </div>
 
-
-        
         <div className="hidden lg:block">
           <Socialicon />
         </div>
