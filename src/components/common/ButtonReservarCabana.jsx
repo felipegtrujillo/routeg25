@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 
 const ButtonReservarCabana = ({tipoCabana, mensajePersonalizado }) => {
 
-  const mensajeBase = "Hola, quiero hacer una reserva";
+  const mensajeBase = "Hola, Me gustaria hacer una reserva";
 
   const handleClick = () => {
     window.open(`https://wa.me/56973990301?text=${mensajeBase} ${mensajePersonalizado}` , "_blank");

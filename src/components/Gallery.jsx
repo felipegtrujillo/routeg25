@@ -8,8 +8,8 @@ import { fadeIn, fadeImg, textVariant } from '../utils/motion.js';
 
 import img1 from '../../public/assets/img/front/IMG_1511.jpg';
 import img2 from '../../public/assets/img/front/home_front2.jpg';
-import img3 from '../../public/assets/img/front/piscina.jpg';
-import img4 from '../../public/assets/img/front/IMG_1113-1-scaled.jpg';
+import img3 from '../../public/assets/img/restaurant/servicio.jpeg';
+import img4 from '../../public/assets/img/cabanas/bungalow_front.jpeg';
 import img5 from '../../public/assets/img/front/IMG_1102-1-scaled.jpg';
 import img6 from '../../public/assets/img/front/IMG_1116-1-scaled.jpg';
 
@@ -17,10 +17,15 @@ const images = [img1, img2, img3, img4, img5, img6];
 
 const Gallery = () => {
   return (
+     <div>
+      <div className='flex justify-center items-center'>
+       <h3 className="text-custom-yellow text-[2.4rem] lg:text-[2.4rem] pb-2  ">Galería del Imagenes</h3>
+      </div>
     <motion.div
-      className="sm:px-8 px-4 sm:py-16 py-10 grid grid-cols-3 gap-4 mx-2"
+      className="sm:px-8 px-4 sm:py-16 py-10 grid grid-col-1 lg:grid-cols-3 gap-4 mx-2 overflow-auto"
       variants={fadeIn('left', 'spring', 0.1, 3)}
     >
+
 
       {images.map((img, index) => (
               <motion.div key={index+1}  className="w-full h-[340px] object-cover "
@@ -35,6 +40,7 @@ const Gallery = () => {
       ))}
 
     </motion.div>
+    </div>
   );
 }
 

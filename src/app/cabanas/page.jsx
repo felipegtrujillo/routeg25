@@ -32,7 +32,7 @@ export default function Page() {
       />
 
       <ParallaxCabanasSections
-        image="/assets/img/cabanas/familiar.jpg"
+        image="/assets/img/cabanas/bungalow_front.jpeg"
         title="Bungalow"
         subtitle="Hasta 4 Personas "
         paragraph="Descubre nuestros 3 hermosos bungalows, perfectos para familias o pequeños grupos. Equipadas con 2 cómodas habitaciones, Camas matrimoniales y camas de 1 1/2 plaza todas con su ropa de cama, baño completo, TV satelital, calefacción a leña o eléctrica (según elección), cocina totalmente equipadas, quincho y estacionamiento privado."
@@ -43,10 +43,12 @@ export default function Page() {
       />
 
        <ParallaxCabanasSections
-        image="/assets/img/cabanas/araucaria/2.jpeg"
+        image="/assets/img/cabanas/familiar.jpg"
         title="Villa"
         subtitle="De 5 a 11 personas "
-        paragraph="Descubre nuestras 2 espectaculares casonas, ideales para grupos o familias de 7 hasta 11 personas. Equipadas con cómodas y amplias habitaciones, baños completos, y amplios espacios comunes con chimenea y TV satelital. Disfruta de la cocina totalmente equipada, quincho con horno de barro según lección y estacionamiento privado."
+        paragraph="Descubre nuestras 2 espectaculares casonas, ideales para grupos o familias de 5 hasta 11 personas. Equipadas con
+               cómodas y amplias habitaciones, camas matrimoniales y camas de 1/2 plazas con su respectiva ropa de cama, baños completos, y amplios espacios comunes
+               con chimenea, bosca y TV satelital, amplias cocinas totalmente equipadas, quincho con horno de barro según elección y estacionamiento privado."
         buttonLink="cabanas/villa"
         buttonText="Ver Habitación"
         tipo="Villa"

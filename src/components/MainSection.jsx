@@ -50,11 +50,10 @@ function Section() {
             </div>
 
             <p className="text-black  lg:text-[1.2rem] text-[1rem] text-justify pb-">
-              Ser una empresa de ecoturismo innovadora en el rubro, la cual brinde
-              momentos y experiencias únicas e inolvidables a nuestros clientes a
-              través del uso sustentable del medioambiente, sin comprometer el
-              hermoso entorno natural que nos rodea y este se preserve al pasar del
-              tiempo.
+            El escape perfecto, para vivir una experiencia en la naturaleza.
+            Somos una empresa de ecoturismo innovadora en el rubro, la cual brinda momentos 
+            y experiencias únicas e inolvidables para nuestros clientes a través del uso sustentable del
+            medioambiente, sin comprometer el hermoso entorno natural que nos rodea y este se preserve al pasar del tiempo.
             </p>
       </motion.div>
 

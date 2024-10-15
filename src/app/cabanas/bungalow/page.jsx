@@ -23,6 +23,10 @@ export default async function Page() {
       imagen4: item.acf ? item.acf.detalle4_bungalow : 'imagen no disponible',
       imagen5: item.acf ? item.acf.detalle5_bungalow : 'imagen no disponible',
       imagen6: item.acf ? item.acf.detalle6_bungalow : 'imagen no disponible',
+      imagen7: item.acf ? item.acf.detalle7_bungalow : 'imagen no disponible',
+      imagen8: item.acf ? item.acf.detalle8_bungalow : 'imagen no disponible',
+      imagen9: item.acf ? item.acf.detalle9_bungalow : 'imagen no disponible',
+      imagen10: item.acf ? item.acf.detalle10_bungalow : 'imagen no disponible',
     }));
   } catch (error) {
     console.error("Error al obtener datos:", error);
@@ -31,22 +35,19 @@ export default async function Page() {
     const cabañas = [
       'Nogal (para 3 personas)',
       'Algarrobo (para 4 personas',
-      'Ciprés(para 4 personas)' 
+      'Ciprés (para 4 personas)' 
   ];
 
   
   const caracteristicas = [
-    { nombre: 'Huespedes', valor: "4" },
+    { nombre: 'Huespedes', valor: "3-4" },
     { nombre: 'Habitaciones', valor: "2"},
     { nombre: 'Camas', valor: "1 ó 2 de 2 plazas, de 1 ó 2 de 1 1/2" },
     { nombre: 'Cocina', valor: "Americana Equipada" },
-    { nombre: 'Comedor', valor: "Living/comedor" },
-    { nombre: 'Living', valor: "Living/comedor" },
+    { nombre: 'Estancia', valor: "Living/comedor" },
     { nombre: 'Baños', valor: "1" },
     { nombre: 'Calefacción', valor: "Leña o Electrica (según eleccion de cabaña)" },
     { nombre: 'Televisión', valor: "1" },
-    { nombre: 'Barra', valor: "No tiene" },
-    { nombre: 'Sala de juegos', valor: "No tiene"},
     { nombre: 'Quincho', valor: "1" },
     { nombre: 'Estacionamiento', valor: "1" }
   ];
@@ -58,6 +59,11 @@ export default async function Page() {
     dataFiltrada[0].imagen4,
     dataFiltrada[0].imagen5,
     dataFiltrada[0].imagen6,
+    dataFiltrada[0].imagen7,
+    dataFiltrada[0].imagen8,
+    dataFiltrada[0].imagen9,
+    dataFiltrada[0].imagen10,
+  
   ] : [];
 
   return (
@@ -79,7 +85,7 @@ export default async function Page() {
 
      <DetalleCabana idCabana="bungalow" titulo="Ideal para Familias o grupos pequeños" caracteristicas={caracteristicas}
                      checkIn="A partir de las 12:00 hasta las 19:00" checkOut="Hasta las 12:00" 
-                     lateCheckOut="Valor 50% de valor de 1 noche, salida hasta las 19:00" precioAdulto="$110.000 - $120.000" precioMascota="20.000" cabañas={cabañas}/>
+                     lateCheckOut="Valor 50% de valor de 1 noche, salida hasta las 19:00" precioPersona="$110.000-$120.000 por noche" precioMascota="20.000" cabañas={cabañas}/>
      <CarouselCabanas images={images}/>
 
      <ReservasFooter/>

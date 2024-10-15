@@ -16,7 +16,8 @@ function mainSectionTerminos() {
     
     <div className="flex flex-col min-h-screen w-screen bg-black ">
         <div className="flex flex-col items-center justify-start  ">
-           <h2 className="text-white text-[1.8rem]">Reserva Cabañas</h2>
+           <br/>
+           <h2 className="text-white text-[1.9rem] font-bold">Reserva Cabañas</h2>
            <div className=" flex flex-col items-start justify-start w-[90vw]">
              <h3 className="text-white text-[1.5rem] font-bold">Para Reservar </h3>
              <ul className="text-white text-[1.2rem] list-disc list-inside "> 
@@ -39,9 +40,11 @@ function mainSectionTerminos() {
                </ul>
            </div>
         </div>
-
+        <br/>
+        <br/>
+        <br/>
         <div className="flex flex-col items-center justify-start  ">
-        <h2 className="text-white text-[1.8rem]">Reglamento Hospedaje </h2>
+        <h2 className="text-white text-[1.9rem] font-bold">Reglamento Hospedaje </h2>
         <div className=" flex flex-col items-start justify-start w-[90vw]">
         <ul className="text-white text-[1.2rem] list-disc list-inside">
             <li>El check in es desde las 12:00 hrs. Este se realiza en el restaurant.</li>

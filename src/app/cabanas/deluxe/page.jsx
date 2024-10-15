@@ -19,6 +19,10 @@ export default async function Page() {
           imagen4: item.acf ? item.acf.detalle4_deluxe : 'imagen no disponible',
           imagen5: item.acf ? item.acf.detalle5_deluxe : 'imagen no disponible',
           imagen6: item.acf ? item.acf.detalle6_deluxe : 'imagen no disponible',
+          imagen7: item.acf ? item.acf.detalle7_deluxe : 'imagen no disponible',
+          imagen8: item.acf ? item.acf.detalle8_deluxe : 'imagen no disponible',
+          imagen9: item.acf ? item.acf.detalle9_deluxe : 'imagen no disponible',
+          imagen10: item.acf ? item.acf.detalle10_deluxe : 'imagen no disponible',
         }));
       } catch (error) {
         console.error("Error al obtener datos:", error);
@@ -43,13 +47,10 @@ export default async function Page() {
         { nombre: 'Habitaciones', valor: "1"},
         { nombre: 'Camas', valor: "1 de 2 plazas" },
         { nombre: 'Cocina', valor: "Americana Equipada" },
-        { nombre: 'Comedor', valor: "Living/comedor" },
-        { nombre: 'Living', valor: "Living/comedor" },
+        { nombre: 'Estancia', valor: "Living/comedor" },
         { nombre: 'Baños', valor: "1" },
         { nombre: 'Calefacción', valor: "Leña o Electrica (segun elección de cabaña)" },
         { nombre: 'Televisión', valor: "1" },
-        { nombre: 'Barra', valor: "No tiene" },
-        { nombre: 'Sala de juegos', valor: "No tiene"},
         { nombre: 'Quincho', valor: "1" },
         { nombre: 'Estacionamiento', valor: "1" }
       ];
@@ -61,6 +62,11 @@ export default async function Page() {
         dataFiltrada[0].imagen4,
         dataFiltrada[0].imagen5,
         dataFiltrada[0].imagen6,
+        dataFiltrada[0].imagen7,
+        dataFiltrada[0].imagen8,
+        dataFiltrada[0].imagen9,
+        dataFiltrada[0].imagen10,
+      
       ] : [];
 
   return (

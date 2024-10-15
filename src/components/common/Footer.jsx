@@ -90,7 +90,7 @@ const Footer = () => {
                       className={`flex flex-col justify-center items-center lg:items-start text-[1rem]  text-white `}
                     >
                       <li><Link href="/ayuda/terminos" className="block px-2 py-2 text-center hover:text-gray-400  ">Terminos y condiciones</Link></li>
-                      <li><Link href="/ayuda/FAQ" className="block px-2 py-2 text-center hover:text-gray-400">FAQ</Link></li>
+                      <li><Link href="/ayuda/FAQ" className="block px-2 py-2 text-center hover:text-gray-400">Preguntas Frecuentes</Link></li>
 
                     </ul>
                     </div>
@@ -109,7 +109,7 @@ const Footer = () => {
   
                     <div className='flex items-center pb-1'>
                         <a
-                        href="https://www.instagram.com/lacalchona.cl/"
+                        href="https://www.instagram.com/lacalchona.cl?igshid=MzRlODBiNWFlZA%3D%3D"
                         target="_blank"
                         rel="noopener noreferrer"
                         title="Instagram"
@@ -117,7 +117,7 @@ const Footer = () => {
                       >
                         <FaInstagram size={25} className='text-yellow-800' />
                       </a>
-                        <p className='ml-4 font-montserrat text-[1rem] text-white'>@lacalchona.cl</p>
+                        <p className='ml-4 font-montserrat text-[1rem] text-white'> Instagram</p>
                     </div>
                   
                     <div className='flex items-center pb-1'>
@@ -131,11 +131,11 @@ const Footer = () => {
                         <FaFacebookF  size={25} className='text-yellow-800'/>
                       
                       </a>
-                      <p className='ml-4 font-montserrat text-[1rem] text-white'>/lacalchona.cl</p>
+                      <p className='ml-4 font-montserrat text-[1rem] text-white'>Facebook</p>
                     </div>
                     <div className='flex items-center pb-1'>
                         <a
-                          href="https://www.tiktok.com/@lacalchona.cl"
+                          href="https://www.tiktok.com/@lacalchona.cl?_t=8f3pUvXhDTq&_r=1"
                           target="_blank"
                           rel="noopener noreferrer"
                           title="TikTok"
@@ -143,7 +143,7 @@ const Footer = () => {
                         >
                           <FaTiktok size={25} className='text-yellow-800'/>
                         </a>
-                        <p className='ml-4 font-montserrat text-[1rem] text-white'>@lacalchona.cl</p>
+                        <p className='ml-4 font-montserrat text-[1rem] text-white'>TikTok</p>
                         </div>
                 </div>
               </motion.div>

@@ -54,7 +54,7 @@ function DetalleCabana({ idCabana, titulo, caracteristicas, checkIn, checkOut, l
             <h3 className="text-lg text-left">Precios</h3>
             <ul className="mt-4">
                   <li className="text-sm text-left font-bold text-black mb-1"> 
-                    {precioCabaña ? `Por cabaña: ${precioCabaña}` : precioPersona? `Precio Persona: ${precioPersona}` : 'No disponible'}
+                    {precioCabaña ? `Por cabaña: ${precioCabaña}` : precioPersona? `Precio: ${precioPersona}` : 'No disponible'}
                   </li>
                   <li className="text-sm text-left font-bold text-black mb-1"> Por mascota: {precioMascota}</li>
             </ul>

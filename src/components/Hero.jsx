@@ -35,7 +35,7 @@ function Hero() {
                   <motion.button className="bg-custom-green text-white  py-2 px-6 rounded-[1rem] shadow-md hover:bg-green-700 hover:text-yellow-500  "
                     whileHover={{ scale: 1.05 }}  
                     transition={{ duration: 0.3 }}  
-                    onClick={() => window.open("https://wa.me/549123456789?text=Hola,%20quiero%20hacer%20una%20reserva", "_blank")}
+                    onClick={() => window.open("https://wa.me/56957661602?text=Hola,%20Me%20gustaria%20hacer%20una%20reserva%20de%20mesa", "_blank")}
                     >
                       Reserva Hoy
                   </motion.button>

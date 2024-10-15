@@ -5,7 +5,6 @@ import Footer from '../../../components/common/Footer.jsx';
 import ParallaxCabanasMain from "../../../components/ParallaxCabanasMain.jsx";
 import DetalleCabana from "../../../components/common/DetalleCabana.jsx";
 import CarouselCabanas from "../../../components/common/CarouselCabanas.jsx";
-
 import ReservasFooter from '../../../components/common/ReservasFooter.jsx';
 import axios from 'axios';
 
@@ -21,6 +20,10 @@ export default async function Page() {
       imagen4: item.acf ? item.acf.detalle4_villa: 'imagen no disponible',
       imagen5: item.acf ? item.acf.detalle5_villa : 'imagen no disponible',
       imagen6: item.acf ? item.acf.detalle6_villa: 'imagen no disponible',
+      imagen7: item.acf ? item.acf.detalle7_villa: 'imagen no disponible',
+      imagen8: item.acf ? item.acf.detalle8_villa: 'imagen no disponible',
+      imagen9: item.acf ? item.acf.detalle9_villa : 'imagen no disponible',
+      imagen10: item.acf ? item.acf.detalle10_villa: 'imagen no disponible'
     }));
   } catch (error) {
     console.error("Error al obtener datos:", error);
@@ -28,8 +31,8 @@ export default async function Page() {
 
 
   const cabañas = [
-    'Roble(de 5 a 7 personas)',
-    'Arrayán( de 7 a 11 personas)'
+    'Roble (de 5 a 7 personas)',
+    'Arrayán ( de 7 a 11 personas)'
 
 ];
 
@@ -41,10 +44,8 @@ const caracteristicas = [
   { nombre: 'Comedor', valor: "Independiente" },
   { nombre: 'Living', valor: "Independiente" },
   { nombre: 'Baños', valor: "2 a 4" },
-  { nombre: 'Calefacción', valor: "Leña o Electrica segun elección" },
+  { nombre: 'Calefacción', valor: "Leña" },
   { nombre: 'Televisión', valor: "1" },
-  { nombre: 'Barra', valor: "si" },
-  { nombre: 'Sala de juegos', valor: "si"},
   { nombre: 'Quincho', valor: "1" },
   { nombre: 'Estacionamiento', valor: "1" }
 ];
@@ -56,6 +57,11 @@ const images = dataFiltrada.length > 0 ? [
   dataFiltrada[0].imagen4,
   dataFiltrada[0].imagen5,
   dataFiltrada[0].imagen6,
+  dataFiltrada[0].imagen7,
+  dataFiltrada[0].imagen8,
+  dataFiltrada[0].imagen9,
+  dataFiltrada[0].imagen10,
+
 ] : [];
 
   return (

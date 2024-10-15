@@ -12,7 +12,7 @@ export default function Page() {
      <div className='relative z-0'>
 
       <Navbar/>
-      <TitleHelpSection idSection="#main" name="Terminos y Condiciones" text1="Reservas y Políticas" />
+      <TitleHelpSection idSection="#main" name="Términos y Condiciones" text1="Reservas y Políticas" />
       </div>
      <MainSectionTerminos/>
    
