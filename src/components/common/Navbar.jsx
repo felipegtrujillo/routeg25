@@ -69,7 +69,7 @@ function Navbar() {
 
        className={`relative px-2 lg:px-0 lg:flex lg:justify-center text-md lg:bg-transparent bg-black bg-opacity-70
         lg:translate-y-0 transition-transform transform ease-in-out duration-500 gap-8
-        ${isOpen ? 'translate-y-[128px] translate-x-[-6vw] md:translate-x-[-1vw]' : 'translate-y-[-600vh] translate-x-[-40px]'}  `}>
+        ${isOpen ? 'translate-y-[128px] translate-x-[-6vw] md:translate-x-[-11vw]' : 'translate-y-[-600vh] translate-x-[-40px]'}  `}>
         <li><Link href="/" className=" block  py-2 text-center hover:text-gray-400">Inicio</Link></li>
         <li><Link href="/restaurant" className="block  py-2 text-center hover:text-gray-400">Restaurant</Link></li>
         <li><Link href="/cabanas" className="block text-center py-2 hover:text-gray-400">Cabañas</Link></li>
