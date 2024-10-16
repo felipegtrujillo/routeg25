@@ -1,11 +1,13 @@
-'use client';
 
+
+import dynamic from 'next/dynamic';
+
+// Cargar MapLeaflet solo en el cliente
+const Map = dynamic(() => import('./Map.jsx'), { ssr: false });
 
 import { motion } from 'framer-motion';
 import { SectionWrapper } from '../../hoc/index.js';
 /* import { slideIn } from '../utils/motion.js'; */
-
-import Map from './Map.jsx';
 
 const Contact = () => {
 
@@ -19,4 +21,4 @@ const Contact = () => {
   );
 }
 
-export default SectionWrapper(Contact, "contact");
+export default Contact;
