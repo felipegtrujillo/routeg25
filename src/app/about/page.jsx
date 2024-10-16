@@ -15,7 +15,7 @@ export default function Page() {
     <div className="relative z-0">
     <div className="relative bg-about bg-no-repeat bg-center h-screen"> 
      <Navbar/>
-     <HeroSections idSection="#main" name="Sobre Nosotros" text1="Nuestra Vision" text2="Infraestructura" text3="Servicios Ofrecidos"
+     <HeroSections idSection="#main" name="Sobre Nosotros" text1="Nuestra Visión" text2="Infraestructura" text3="Servicios Ofrecidos"
      buttonName="Saber más"/>
      </div>
      <MainSectionAbout/>
