@@ -17,9 +17,9 @@ const images = [img1, img2, img3, img4, img5, img6];
 
 const Gallery = () => {
   return (
-     <div>
+     <div className='overflow-hidden'>
       <div className='flex justify-center items-center'>
-       <h3 className="text-custom-yellow text-[2.4rem] lg:text-[2.4rem] pb-2  ">Galería del Imagenes</h3>
+       <h3 className="text-custom-yellow text-[2.4rem] lg:text-[2.4rem] pb-2 text-center ">Galería del Imagenes</h3>
       </div>
     <motion.div
       className="sm:px-8 px-4 sm:py-16 py-10 grid grid-col-1 lg:grid-cols-3 gap-4 mx-2 overflow-auto"

@@ -8,7 +8,7 @@ import img1 from '../../public/assets/img/cabanas/araucaria/2.jpeg';
 
 function MainSectionAbout() {
   return (
-    <div id="main" className="sm:px-16 px-6 sm:py-16 py-10 grid grid-cols-1 grid-rows-2 gap-12 mx-2 lg:grid-cols-2 lg:grid-rows-1 min-h-screen w-full ">
+    <div id="main" className="sm:px-16 px-6 sm:py-16 py-10 grid grid-cols-1 grid-rows-2 gap-12 mx-2 lg:grid-cols-2 lg:grid-rows-1 min-h-screen overflow-hidden ">
       <motion.div
         className="lg:w-full lg:h-full flex flex-col justify-center items-center "
         variants={fadeIn('right', "spring", 0.1, 3)}  >

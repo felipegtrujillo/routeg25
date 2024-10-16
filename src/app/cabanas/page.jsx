@@ -18,7 +18,7 @@ export default function Page() {
      <div className="relative bg-cabanas bg-no-repeat bg-center h-screen  z-50"> 
        <Navbar/>
        <HeroSections idSection="#cabanas" name="Cabañas" text1="Descanso a los pies de la Montaña" text2="Alojamiento para toda la Familia" text3="Cabañas Rusticas Full Equipadas"
-       buttonName="Ver Cabañas"/>
+       buttonName="Ver más"/>
      </div>
      <ParallaxCabanasSections
         image="/assets/img/cabanas/araucaria/araucaria.jpeg"

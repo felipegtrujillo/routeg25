@@ -27,13 +27,13 @@ function ServiciosAbout() {
   return (
 
 
-<div id="main" className="sm:px-16 px-6 sm:py-16 py-10 grid grid-cols-1 grid-rows-2 gap-4 mx-2 lg:grid-cols-2 lg:grid-rows-1 min-h-screen ">
+<div id="main" className="sm:px-16 px-6 sm:py-16 py-10 grid grid-cols-1 grid-rows-2 gap-4 mx-2 lg:grid-cols-2 lg:grid-rows-1 min-h-screen  overflow-hidden">
 <motion.div
   className="w-full h-full flex flex-col justify-center items-center"
   variants={fadeIn('right', "spring", 0.1, 3)}
 >
-  <h3 className="text-custom-yellow text-[2.4rem] lg:text-[2.4rem] pb-2  ">Servicios Ofrecidos</h3>
-  <ul className="text-gray2 text-[1.6rem] lg:text-[1.8rem] text-center font-dom pl-4 lg:pl-12">
+  <h3 className="text-custom-yellow text-[2.4rem] lg:text-[2.7rem] pb-2 w-[80%] text-center ">Servicios Ofrecidos</h3>
+  <ul className="ext-gray2 text-[1.3rem] lg:text-[1.5rem] text-center font-dom pl-4 lg:pl-12">
           <li className='before:content-["•"] before:mr-2 text-start'>
             Actividades recreativas
           </li>

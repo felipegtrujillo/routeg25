@@ -78,8 +78,7 @@ function Section() {
       {/* DIV2 IMAGEN */}
 
       <motion.div
-
-        variants={fadeIn("", "spring", 0.1, 2)}
+        variants={fadeIn("left", "spring", 0.1, 2)}
         className="relative px-12 py-[2rem] lg:py-64 flex flex-col justify-center items-start w-full lg:w-[60%]"
       >
         {isMobile ? (
