@@ -6,6 +6,7 @@ import { fadeIn } from '../utils/motion.js';
 
 import img1 from '../../public/assets/img/front/home_front2.jpg';
 
+
 function DetailSectionAbout() {
   return (
     <div className="sm:px-16 px-6 py-12 sm:py-16 mx-2 flex flex-col-reverse lg:flex lg:flex-row gap-4 h-auto ">
