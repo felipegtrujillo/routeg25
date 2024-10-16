@@ -12,7 +12,7 @@ const Contact = () => {
   return (
     <div className='flex justify-center items-center'>
     <div className="flex flex-col justify-center items-center h-full w-[80%] bg-black ">
-      <h3 className='text-white text-center'> Como llegar ?</h3>
+      <h3 className='text-white text-center'> La Calchona</h3>
 {/*        <MapComponent></MapComponent> */}
        <Map/>
     </div>

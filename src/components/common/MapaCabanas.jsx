@@ -3,7 +3,7 @@
 
 import   Image    from 'next/image.js';
 
-import img1 from "../../../public/assets/img/mapa/mapacabañas.png"
+import img1 from "../../../public/assets/img/mapa/mapacabañas.jpeg"
 
 const MapaCabanas = () => {
 

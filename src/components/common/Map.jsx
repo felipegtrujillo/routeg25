@@ -1,42 +1,79 @@
-'use client'
+'use client';
 
-import React from 'react';
-import { GoogleMap, useLoadScript, Marker } from '@react-google-maps/api';
+import React, { useEffect } from 'react';
+import { MapContainer, TileLayer, Marker, useMap } from 'react-leaflet';
+import 'leaflet/dist/leaflet.css';
+import L from 'leaflet';
 
-const containerStyle = {
-  width: '100%',
-  height: '400px',
+// Fix for marker icon (Leaflet default icon won't display without this)
+delete L.Icon.Default.prototype._getIconUrl;
+L.Icon.Default.mergeOptions({
+  iconRetinaUrl: 'https://unpkg.com/leaflet@1.7.1/dist/images/marker-icon-2x.png',
+  iconUrl: 'https://unpkg.com/leaflet@1.7.1/dist/images/marker-icon.png',
+  shadowUrl: 'https://unpkg.com/leaflet@1.7.1/dist/images/marker-shadow.png',
+});
+
+const center = [-33.706827, -70.332945];
+
+// Component to add a custom button to the map
+const CustomButton = ({ position }) => {
+  const map = useMap();
+
+  useEffect(() => {
+    // Check if the button already exists to avoid duplicates
+    if (L.DomUtil.get('custom-button')) {
+      return;
+    }
+
+    // Create the button element
+    const button = L.control({ position: 'topright' });
+
+    button.onAdd = () => {
+      const div = L.DomUtil.create('div', 'leaflet-bar leaflet-control leaflet-control-custom');
+      div.id = 'custom-button';  // Assign an ID to easily target this button
+      div.innerHTML = '📍 Cómo llegar';
+      div.style.backgroundColor = 'white';
+      div.style.cursor = 'pointer';
+      div.style.padding = '5px';
+
+      div.onclick = () => {
+        const googleMapsUrl = `https://www.google.com/maps/dir/?api=1&destination=${position[0]},${position[1]}`;
+        window.open(googleMapsUrl, '_blank');
+      };
+
+      return div;
+    };
+
+    button.addTo(map);
+
+    // Cleanup: Remove the button when the component is unmounted
+    return () => {
+      map.removeControl(button);
+    };
+  }, [map, position]);
+
+  return null;
 };
 
-const center = {
-  lat: -33.706827,
-  lng: -70.332945,
-};
-
-const options = {
-  // Puedes personalizar las opciones del mapa aquí
-  zoom: 15,
-};
-
-function Map() {
-  const { isLoaded } = useLoadScript({
-    googleMapsApiKey: process.env.REACT_APP_GOOGLE_MAPS_API_KEY,
-  });
-
-  if (!isLoaded) return <div>Cargando mapa...</div>;
-
+const MapLeaflet = () => {
   return (
     <div className="relative h-[100%] w-[100%]">
-      <GoogleMap
-        mapContainerStyle={containerStyle}
+      <MapContainer
         center={center}
-        zoom={options.zoom}
-        options={options}
+        zoom={15}
+        style={{ width: '100%', height: '400px' }}
+        scrollWheelZoom={false}
+        attributionControl={false}
       >
+        <TileLayer
+          url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+          attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+        />
         <Marker position={center} />
-      </GoogleMap>
+        <CustomButton position={center} />
+      </MapContainer>
     </div>
   );
-}
+};
 
-export default Map;
+export default MapLeaflet;

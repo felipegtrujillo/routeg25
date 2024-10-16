@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 import { SectionWrapper } from '../hoc/index.js';
 import { fadeIn } from '../utils/motion.js';
 
-import img1 from '../../public/assets/img/front/home_front2.jpg';
+import img1 from '../../public/assets/img/front/faro.jpg';
 
 
 function DetailSectionAbout() {

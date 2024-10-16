@@ -1,4 +1,4 @@
-import React from 'react';
+
 import { motion } from 'framer-motion';
 import Link from 'next/link';
 
@@ -9,9 +9,9 @@ const ButtonVerCarta = () => {
       whileHover={{ scale: 1.05 }}
       transition={{ duration: 0.3 }}
     >
-      <Link href="/restaurant/#cartaPDF">
+      <a href="https://firebasestorage.googleapis.com/v0/b/lacalchona-cd046.appspot.com/o/CARTA-LA-CALCHONA.pdf?alt=media&token=b5fef067-ce63-4481-a0e7-95b5c7bbd35f">
         Ver Carta
-      </Link>
+      </a>
     </motion.button>
   );
 };

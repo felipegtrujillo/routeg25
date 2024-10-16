@@ -14,7 +14,7 @@ const titleVariants = {
 
 import { textVariant } from "../utils/motion.js";
 
-function HeroSections( {name, text1, text2, text3, buttonName, idSection}  ) {
+function HeroSections( {name, text1, text2, text3, buttonName, idSection, isRestaurant, page}  ) {
   return (
     
     <div className="flex flex-col justify-center items-center py-[40vh]">
@@ -36,9 +36,15 @@ function HeroSections( {name, text1, text2, text3, buttonName, idSection}  ) {
                    whileHover={{ scale: 1.05 }}
                    transition={{ duration: 0.3 }}  
                 >
+                {isRestaurant ? (
+                  <a href={page}>
+                           {buttonName}
+                         </a>
+                  ) : (
                     <Link href={idSection}>
-                    { buttonName }
-                     </Link>
+                    {buttonName}
+                  </Link>
+                  )}
              </motion.button>
           </div>
         </div>

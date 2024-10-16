@@ -35,7 +35,7 @@ module.exports = {
         "restaurant": "url('/assets/img/restaurant/restaurant.jpg')",
         "carta": "url('/assets/img/restaurant/bar.jpg')",
         "cabanas": "url('/assets/img/front/la_calchona.jpg')",
-        "about": "url('/assets/img/menu/about.jpg')",
+        "about": "url('/assets/img/front/about2.jpg')",
         "fondo": "url('/assets/img/front/piscina.jpg')"
       },
       borderWidth: {
