@@ -83,7 +83,7 @@ export default async function Page() {
 
      <DetalleCabana idCabana="bungalow" titulo="Ideal para Familias o grupos pequeños" caracteristicas={caracteristicas}
                      checkIn="A partir de las 12:00 hasta las 19:00" checkOut="Hasta las 12:00" 
-                     lateCheckOut="Valor 50% de valor de 1 noche, salida hasta las 19:00" precioCabaña="$110.000-$120.000 por noche" precioMascota="$20.000 por total estadia" cabañas={cabañas}/>
+                     lateCheckOut="Valor 50% de valor de 1 noche, salida hasta las 19:00" precioCabaña="$110.000-$120.000 por noche" precioMascota="$20.000 por total estadía" cabañas={cabañas}/>
      <CarouselCabanas images={images}/>
 
      <ReservasFooter/>
