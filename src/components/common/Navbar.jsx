@@ -17,7 +17,7 @@ function Navbar() {
     const handleScroll = () => {
       const currentScrollY = window.scrollY;
 
-      if (currentScrollY  <= 200) {
+      if (currentScrollY  == 0) {
         setShowNavbar(true);
       } else if (currentScrollY < lastScrollY) {
         setShowNavbar(true);
