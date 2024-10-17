@@ -51,7 +51,7 @@ function CabañasSection() {
            <Link href={`/cabanas/${image.link}`} key={index}>
           <div key={index} className='relative flex flex-col  justify-center items-center group w-full'>
             <motion.div
-              className="relative overflow-hidden rounded-[10px] h-[20rem] w-[25rem] sm:w-[14rem] "
+              className="relative overflow-hidden rounded-[10px] h-[20rem] w-[23rem] sm:w-[14rem] "
               whileHover={{ scale: 1.05 }}
               transition={{ duration: 0.3 }}
             >
