@@ -1,9 +1,11 @@
 // src/components/PdfViewer.jsx
 "use client";
 
-import React from "react";
-import Image from "next/image";
-import img1 from "../../../public/assets/img/restaurant/bar.jpg";
+import React from 'react';
+
+import Image from 'next/image';
+
+import img1 from '../../../public/assets/img/restaurant/bar.jpg';
 
 const Carta = () => {
   const pdfUrl =

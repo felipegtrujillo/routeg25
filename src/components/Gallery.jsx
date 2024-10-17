@@ -1,17 +1,17 @@
-
 import { motion } from 'framer-motion';
-import { SectionWrapper } from '../hoc';
-
 import Image from 'next/image';
 
-import { fadeIn, fadeImg, textVariant } from '../utils/motion.js';
-
-import img1 from '../../public/assets/img/front/IMG_1511.jpg';
+import img4 from '../../public/assets/img/cabanas/bungalow_front.jpeg';
+import img5 from '../../public/assets/img/front/about1.jpg';
+import img6 from '../../public/assets/img/front/about3.jpg';
+import img1 from '../../public/assets/img/front/about4.jpg';
 import img2 from '../../public/assets/img/front/home_front2.jpg';
 import img3 from '../../public/assets/img/restaurant/servicio.jpeg';
-import img4 from '../../public/assets/img/cabanas/bungalow_front.jpeg';
-import img5 from '../../public/assets/img/front/IMG_1102-1-scaled.jpg';
-import img6 from '../../public/assets/img/front/IMG_1116-1-scaled.jpg';
+import { SectionWrapper } from '../hoc';
+import {
+  fadeImg,
+  fadeIn,
+} from '../utils/motion.js';
 
 const images = [img1, img2, img3, img4, img5, img6];
 
@@ -19,7 +19,7 @@ const Gallery = () => {
   return (
      <div className='overflow-hidden'>
       <div className='flex justify-center items-center'>
-       <h3 className="text-custom-yellow text-[2.4rem] lg:text-[2.4rem] pb-2 text-center ">Galería del Imagenes</h3>
+       <h3 className="text-custom-yellow text-[2.4rem] lg:text-[2.4rem] pb-2 text-center ">Galería del Imágenes</h3>
       </div>
     <motion.div
       className="sm:px-8 px-4 sm:py-16 py-10 grid grid-col-1 lg:grid-cols-3 gap-4 mx-2 overflow-auto"

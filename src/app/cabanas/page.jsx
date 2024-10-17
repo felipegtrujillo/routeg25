@@ -2,13 +2,12 @@
 
 'use client'
 
-import Navbar from '../../components/common/Navbar';
-import HeroSections from '../../components/HeroSections.jsx';
-import ReservasFooter from '../../components/common/ReservasFooter.jsx'
 import Footer from '../../components/common/Footer.jsx';
-
-import ParallaxCabanasSections from "../../components/ParallaxCabanasSections";
-import MapaCabanas from "../../components/common/MapaCabanas";
+import MapaCabanas from '../../components/common/MapaCabanas';
+import Navbar from '../../components/common/Navbar';
+import ReservasFooter from '../../components/common/ReservasFooter.jsx';
+import HeroSections from '../../components/HeroSections.jsx';
+import ParallaxCabanasSections from '../../components/ParallaxCabanasSections';
 
 export default function Page() {
 
@@ -17,7 +16,7 @@ export default function Page() {
 
      <div className="relative bg-cabanas bg-no-repeat bg-center h-screen  z-50"> 
        <Navbar/>
-       <HeroSections idSection="#cabanas" name="Cabañas" text1="Descanso a los pies de la Montaña" text2="Alojamiento para toda la Familia" text3="Cabañas Rusticas Full Equipadas"
+       <HeroSections idSection="#cabanas" name="Cabañas" text1="Descanso a los pies de la Montaña" text2="Alojamiento para toda la Familia" text3="Cabañas Rústicas Full Equipadas"
        buttonName="Ver más"/>
      </div>
      <ParallaxCabanasSections
@@ -35,7 +34,7 @@ export default function Page() {
         image="/assets/img/cabanas/bungalow_front.jpeg"
         title="Bungalow"
         subtitle="Hasta 4 Personas "
-        paragraph="Descubre nuestros 3 hermosos bungalows, perfectos para familias o pequeños grupos. Equipadas con 2 cómodas habitaciones, Camas matrimoniales y camas de 1 1/2 plaza todas con su ropa de cama, baño completo, TV satelital, calefacción a leña o eléctrica (según elección), cocina totalmente equipadas, quincho y estacionamiento privado."
+        paragraph="Descubre nuestros 3 hermosos bungalows, perfectos para familias o pequeños grupos. Equipadas con 2 cómodas habitaciones, Camas matrimoniales y camas de 1 1/2 plaza todas con su ropa de cama, baño completo, TV satelital, calefacción a leña o eléctrica (según elección), cocina totalmente equipada, quincho y estacionamiento privado."
         buttonLink="/cabanas/bungalow"
         buttonText="Ver Habitación"
         tipo="Bungalow"
@@ -47,7 +46,7 @@ export default function Page() {
         title="Villa"
         subtitle="De 5 a 11 personas "
         paragraph="Descubre nuestras 2 espectaculares casonas, ideales para grupos o familias de 5 hasta 11 personas. Equipadas con
-               cómodas y amplias habitaciones, camas matrimoniales y camas de 1/2 plazas con su respectiva ropa de cama, baños completos, y amplios espacios comunes
+               cómodas y amplias habitaciones, camas matrimoniales y camas de 1 y 1/2 plazas con su respectiva ropa de cama, baños completos, y amplios espacios comunes
                con chimenea, bosca y TV satelital, amplias cocinas totalmente equipadas, quincho con horno de barro según elección y estacionamiento privado."
         buttonLink="cabanas/villa"
         buttonText="Ver Habitación"

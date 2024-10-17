@@ -1,17 +1,14 @@
 // app/page.tsx (o page.ts)
 'use client';
 
-
-import Navbar from '../../components/common/Navbar';
-import HeroSections from '../../components/HeroSections.jsx';
-import CartaPre from '../../components/CartaPre.jsx'
+import img1 from '../../../public/assets/img/restaurant/barra.jpg';
+import CartaPre from '../../components/CartaPre.jsx';
 import Carta from '../../components/common/Carta.jsx';
 import Footer from '../../components/common/Footer.jsx';
+import Navbar from '../../components/common/Navbar';
+import HeroSections from '../../components/HeroSections.jsx';
 import ParallaxSection from '../../components/ParallaxSection';
 import ReservasMesasFooter from '../../components/ReservasMesaFooter';
-
-import img1 from '../../../public/assets/img/restaurant/barra.jpg';
-
 
 export default function Page() {
 
@@ -28,7 +25,7 @@ export default function Page() {
      <ParallaxSection 
         key="parallax-carta"
         image={img1}
-        paragraphText="Conoce en detalle nuestro menu"
+        paragraphText="Conoce en detalle nuestro menú"
         titleText="Carta"
       />
 

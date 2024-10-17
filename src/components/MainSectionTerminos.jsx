@@ -1,15 +1,11 @@
 "use client";
 
-import React from "react";
-import { motion } from "framer-motion";
-import Link from "next/link";
+import React from 'react';
 
 const titleVariants = {
   hidden: { opacity: 0, y: -50 },
   visible: { opacity: 1, y: 0 },
 };
-
-import { textVariant } from "../utils/motion.js";
 
 function mainSectionTerminos() {
   return (
@@ -45,9 +41,10 @@ function mainSectionTerminos() {
         <br/>
         <div className="flex flex-col items-center justify-start  ">
         <h2 className="text-white text-[1.9rem] font-bold">Reglamento Hospedaje </h2>
+        <br />
         <div className=" flex flex-col items-start justify-start w-[90vw]">
         <ul className="text-white text-[1.2rem] list-disc list-inside">
-            <li>El check in es desde las 12:00 hrs. Este se realiza en el restaurant.</li>
+            <li>El check in es desde las 12:00 hrs hasta las 19:00 hrs.Este se realiza en el restaurant.</li>
             <li>El check out es hasta las 12:00 hrs.</li>
             <li>Puedes realizar late check out hasta las 19:00 hrs. pagando el 50% del valor de una noche.</li>
             <li>Se debe de avisar al personal del centro turístico, el cual se acercará a su cabaña para realizar chequeo previo al check out; en caso de daños a los objetos y mobiliario de las cabañas, se cobrará un valor proporcional al daño.</li>
@@ -63,6 +60,7 @@ function mainSectionTerminos() {
 
            </div>
         </div>
+        <br />
 
    </div>
 

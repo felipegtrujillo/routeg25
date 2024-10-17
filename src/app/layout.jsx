@@ -1,11 +1,6 @@
+import './globals.css';
 
-import localFont from "next/font/local";
-import "./globals.css";
-import ClientTransitionWrapper from '../components/clientComponents/ClientTransitionWrapper';
-import MiLayout from '../components/layout/MiLayout'
-
-import { montserrat } from '../app/ui/fonts'
-import Footer from "../components/common/Footer";
+import { montserrat } from '../app/ui/fonts';
 
 export const metadata = {
   title: "La Calchona",

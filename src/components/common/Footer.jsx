@@ -1,15 +1,18 @@
 
 'use client';
 
-import Link from 'next/link';
 import { motion } from 'framer-motion';
+import Link from 'next/link';
+import {
+  FaFacebookF,
+  FaInstagram,
+  FaTiktok,
+} from 'react-icons/fa';
+import { IoRestaurant } from 'react-icons/io5';
+import { MdOutlineCabin } from 'react-icons/md';
+import { TiLocation } from 'react-icons/ti';
 
-import { TiLocation } from "react-icons/ti";
-import { IoIosMail } from "react-icons/io";
-import { FaInstagram, FaFacebookF, FaTiktok } from 'react-icons/fa';
 import { slideIn } from '../../utils/motion.js';
-
-
 import LogoSVG from './LogoSVG.jsx';
 
 const Footer = () => {
@@ -35,19 +38,29 @@ const Footer = () => {
                  animate="show"
               className='flex items-start justify-center'
             >
-            <div className='text-[1rem]  text-white'>
-              <h2 className=' font-playfair font-semibold pt-2 text-[1.5rem] text-center lg:text-start '>Dirección</h2>
-   
-              <div className='flex items-center justify-center '>
-                  <TiLocation size={50} className='text-yellow-800' /> 
+            <div className='flex flex-col items-center lg:items-start justify-center text-[1rem]  text-white gap-2'>
+
+                <div>
+                <h2 className=' font-playfair font-semibold pt-2 text-[1.5rem] text-center lg:text-start '>Dirección</h2>
+                </div>
+
+               <div className='flex items-center justify-center '>
+                  <TiLocation size={52} className='text-yellow-800' /> 
                   <p className='ml-4 font-montserrat text-[1rem]'>
                     Camino al Volcán 28.700, San José de Maipo, El Melocotón, RM.
                   </p>
                 </div>
+ 
                 <div className='flex items-center justify-center lg:justify-start '>
-                  <IoIosMail size={35} className='text-yellow-800' /> 
+                  <MdOutlineCabin size={30} className='text-yellow-800' /> 
                   <p className='ml-4 font-montserrat text-[1rem]'>
                     Administracion@lacalchona.cl
+                  </p>
+                </div>
+                <div className='flex items-center justify-center lg:justify-start '>
+                  <IoRestaurant size={30} className='text-yellow-800' /> 
+                  <p className='ml-4 font-montserrat text-[1rem]'>
+                    info@lacalchona.cl
                   </p>
                 </div>
              </div>
@@ -104,9 +117,11 @@ const Footer = () => {
                   animate="show" 
                   className='flex items-start justify-center' >
 
-                 <div className='text-[1rem]  text-white'>         
+                 <div className='flex flex-col text-[1rem] text-white gap-2'>   
+                  <div>     
                   <h2 className='text-white font-playfair font-semibold pt-2  text-[1.5rem] text-center lg:text-star'>Redes Sociales</h2>
-  
+                  </div> 
+                   <div className='flex gap-8'>
                     <div className='flex items-center pb-1'>
                         <a
                         href="https://www.instagram.com/lacalchona.cl?igshid=MzRlODBiNWFlZA%3D%3D"
@@ -117,7 +132,7 @@ const Footer = () => {
                       >
                         <FaInstagram size={25} className='text-yellow-800' />
                       </a>
-                        <p className='ml-4 font-montserrat text-[1rem] text-white'> Instagram</p>
+                        
                     </div>
                   
                     <div className='flex items-center pb-1'>
@@ -131,7 +146,7 @@ const Footer = () => {
                         <FaFacebookF  size={25} className='text-yellow-800'/>
                       
                       </a>
-                      <p className='ml-4 font-montserrat text-[1rem] text-white'>Facebook</p>
+                    
                     </div>
                     <div className='flex items-center pb-1'>
                         <a
@@ -143,8 +158,9 @@ const Footer = () => {
                         >
                           <FaTiktok size={25} className='text-yellow-800'/>
                         </a>
-                        <p className='ml-4 font-montserrat text-[1rem] text-white'>TikTok</p>
-                        </div>
+                        
+                    </div>
+                   </div>
                 </div>
               </motion.div>
     </div>

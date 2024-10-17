@@ -25,7 +25,7 @@ function RestaurantSection({data}) {;
               <p className='text-black text-[1rem] text-center pb-[3rem]'>  
                 Restaurant Rustico a los pies de la montaña <br />
                 Ubicados en el hermoso valle del Cajón del Maipo, <br />
-                 en el sector El Melocoton.
+                 en el sector El Melocotón.
               </p>
 
               <Restauranticons/>

@@ -1,12 +1,11 @@
-
-
-import Navbar from '../../../components/common/Navbar.jsx';
-import Footer from '../../../components/common/Footer.jsx';
-import ParallaxCabanasMain from "../../../components/ParallaxCabanasMain.jsx";
-import DetalleCabana from "../../../components/common/DetalleCabana.jsx";
-import CarouselCabanas from "../../../components/common/CarouselCabanas.jsx";
-import ReservasFooter from '../../../components/common/ReservasFooter.jsx';
 import axios from 'axios';
+
+import CarouselCabanas from '../../../components/common/CarouselCabanas.jsx';
+import DetalleCabana from '../../../components/common/DetalleCabana.jsx';
+import Footer from '../../../components/common/Footer.jsx';
+import Navbar from '../../../components/common/Navbar.jsx';
+import ReservasFooter from '../../../components/common/ReservasFooter.jsx';
+import ParallaxCabanasMain from '../../../components/ParallaxCabanasMain.jsx';
 
 export default async function Page() {
       let dataFiltrada = [];
@@ -43,13 +42,13 @@ export default async function Page() {
       ];
 
       const caracteristicas = [
-        { nombre: 'Huespedes', valor: "2" },
+        { nombre: 'Huéspedes', valor: "2" },
         { nombre: 'Habitaciones', valor: "1"},
         { nombre: 'Camas', valor: "1 de 2 plazas" },
         { nombre: 'Cocina', valor: "Americana Equipada" },
         { nombre: 'Estancia', valor: "Living/comedor" },
         { nombre: 'Baños', valor: "1" },
-        { nombre: 'Calefacción', valor: "Leña o Electrica (segun elección de cabaña)" },
+        { nombre: 'Calefacción', valor: "Leña o Eléctrica (según elección de cabaña)" },
         { nombre: 'Televisión', valor: "1" },
         { nombre: 'Quincho', valor: "1" },
         { nombre: 'Estacionamiento', valor: "1" }
@@ -74,7 +73,7 @@ export default async function Page() {
       <div className="relative bg-no-repeat bg-center h-screen z-50"> 
         <Navbar/>
         <ParallaxCabanasMain
-          image="/assets/img/cabanas/duplex.jpg"
+          image="/assets/img/cabanas/balcon.jpeg"
           title="Deluxe"
           subtitle="Hasta 2 personas"
           paragraph="Contamos con 11 cabañas dobles independientes, ideal para parejas. Con cama matrimonial con ropa de cama, TV satelital por cable, baño en suite y calefacción a leña ó eléctrica según elección de cabaña. Incluye cocina full equipada, quincho y estacionamiento privado."
@@ -92,7 +91,7 @@ export default async function Page() {
         checkIn="A partir de las 12:00 hasta las 19:00" 
         checkOut="Hasta las 12:00" 
         lateCheckOut="Valor 50% de valor de 1 noche, salida hasta las 19:00" 
-        precioCabaña="$100.000" 
+        precioCabaña="$100.000 por" 
         precioMascota="$20.000" 
         cabañas={cabañas}
       />

@@ -1,15 +1,13 @@
 // app/page.tsx (o page.ts)
 
-
-import Navbar from '../../../components/common/Navbar.jsx';
-import Footer from '../../../components/common/Footer.jsx';
-import ParallaxCabanasMain from "../../../components/ParallaxCabanasMain.jsx";
-
-import DetalleCabana from "../../../components/common/DetalleCabana.jsx";
-import CarouselCabanas from "../../../components/common/CarouselCabanas.jsx";
-
-import ReservasFooter from '../../../components/common/ReservasFooter.jsx';
 import axios from 'axios';
+
+import CarouselCabanas from '../../../components/common/CarouselCabanas.jsx';
+import DetalleCabana from '../../../components/common/DetalleCabana.jsx';
+import Footer from '../../../components/common/Footer.jsx';
+import Navbar from '../../../components/common/Navbar.jsx';
+import ReservasFooter from '../../../components/common/ReservasFooter.jsx';
+import ParallaxCabanasMain from '../../../components/ParallaxCabanasMain.jsx';
 
 export default async function Page() {
 
@@ -40,13 +38,13 @@ export default async function Page() {
 
   
   const caracteristicas = [
-    { nombre: 'Huespedes', valor: "3-4" },
+    { nombre: 'Huéspedes', valor: "3-4" },
     { nombre: 'Habitaciones', valor: "2"},
     { nombre: 'Camas', valor: "1 ó 2 de 2 plazas, de 1 ó 2 de 1 1/2" },
     { nombre: 'Cocina', valor: "Americana Equipada" },
     { nombre: 'Estancia', valor: "Living/comedor" },
     { nombre: 'Baños', valor: "1" },
-    { nombre: 'Calefacción', valor: "Leña o Electrica (según eleccion de cabaña)" },
+    { nombre: 'Calefacción', valor: "Leña o Eléctrica (según eleccion de cabaña)" },
     { nombre: 'Televisión', valor: "1" },
     { nombre: 'Quincho', valor: "1" },
     { nombre: 'Estacionamiento', valor: "1" }
@@ -72,10 +70,10 @@ export default async function Page() {
      <div className="relative  bg-no-repeat bg-center h-screen  z-50"> 
        <Navbar/>
        <ParallaxCabanasMain
-        image="/assets/img/cabanas/familiar.jpg"
+        image="/assets/img/cabanas/bungalow3.jpeg"
         title="Bungalow"
         subtitle="Hasta 4 personas"
-        paragraph="Descubre nuestros 3 hermosos bungalows, perfectos para familias o pequeños grupos. Equipadas con 2 cómodas habitaciones, Camas matrimoniales y camas de 1 1/2 plaza todas con su ropa de cama, baño completo, TV satelital, calefacción a leña o eléctrica (según elección), cocina totalmente equipadas, quincho y estacionamiento privado."
+        paragraph="Descubre nuestros 3 hermosos bungalows, perfectos para familias o pequeños grupos. Equipadas con 2 cómodas habitaciones, Camas matrimoniales y camas de 1 1/2 plaza todas con su ropa de cama, baño completo, TV satelital, calefacción a leña o eléctrica (según elección), cocina totalmente equipada, quincho y estacionamiento privado."
         buttonLink="#bungalow"
         buttonText="Ver Prestaciones"
         tipo="Bungalow"
@@ -85,7 +83,7 @@ export default async function Page() {
 
      <DetalleCabana idCabana="bungalow" titulo="Ideal para Familias o grupos pequeños" caracteristicas={caracteristicas}
                      checkIn="A partir de las 12:00 hasta las 19:00" checkOut="Hasta las 12:00" 
-                     lateCheckOut="Valor 50% de valor de 1 noche, salida hasta las 19:00" precioPersona="$110.000-$120.000 por noche" precioMascota="20.000" cabañas={cabañas}/>
+                     lateCheckOut="Valor 50% de valor de 1 noche, salida hasta las 19:00" precioCabaña="$110.000-$120.000 por noche" precioMascota="$20.000" cabañas={cabañas}/>
      <CarouselCabanas images={images}/>
 
      <ReservasFooter/>

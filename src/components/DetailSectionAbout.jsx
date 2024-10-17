@@ -1,11 +1,10 @@
 'use client'
-import Image from "next/legacy/image";
 import { motion } from 'framer-motion';
-import { SectionWrapper } from '../hoc/index.js';
-import { fadeIn } from '../utils/motion.js';
+import Image from 'next/legacy/image';
 
 import img1 from '../../public/assets/img/front/faro.jpg';
-
+import { SectionWrapper } from '../hoc/index.js';
+import { fadeIn } from '../utils/motion.js';
 
 function DetailSectionAbout() {
   return (
@@ -25,10 +24,10 @@ function DetailSectionAbout() {
           <div className="w-full flex items-start">
             <ul className='text-gray2 text-[1.3rem] lg:text-[1.5rem] text-center font-dom pl-4 lg:pl-12'>
               <li className='before:content-["•"] before:mr-2 text-start'>
-                El restaurant cuenta con X metros cuadrados
+                El restaurant cuenta con 592 metros cuadrados
               </li>
               <li className='before:content-["•"] before:mr-2 text-start'>
-                3 salones interiores
+                3 Salones interiores
               </li>
               <li className='before:content-["•"] before:mr-2 text-start'>
                 3 Terrazas
@@ -42,6 +41,9 @@ function DetailSectionAbout() {
               <li className='before:content-["•"] before:mr-2 text-start'>
                 Capacidad para 250 personas
               </li>
+              <li className='before:content-["•"] before:mr-2 text-start'>
+                Gran Piscina al aire libre
+                </li>
               <li className='before:content-["•"] before:mr-2 text-start'>
                 100.000 metros cuadrados de áreas naturales
               </li>

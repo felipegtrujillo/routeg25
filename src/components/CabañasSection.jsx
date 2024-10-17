@@ -2,15 +2,16 @@
 'use client';
 
 import React from 'react';
-import Image from 'next/image';
-import Link from "next/link"; 
 
 import { motion } from 'framer-motion';
-import { fadeIn } from '../utils/motion.js';
-import img1 from '../../public/assets/img/cabanas/cabana4.jpg';
-import img2 from '../../public/assets/img/cabanas/cabana2_2.jpg';
-import img3 from '../../public/assets/img/cabanas/cabana3.jpg';
+import Image from 'next/image';
+import Link from 'next/link';
+
+import img2 from '../../public/assets/img/cabanas/bungalow_front.jpeg';
+import img1 from '../../public/assets/img/cabanas/cabana1.jpg';
+import img3 from '../../public/assets/img/cabanas/familiar.jpg';
 import { SectionWrapper } from '../hoc/index.js';
+import { fadeIn } from '../utils/motion.js';
 
 const images = [
   { src: img1, link:"deluxe", alt: "Deluxe", text: "Deluxe", additionalText: "Para 2 personas" },
@@ -29,8 +30,8 @@ function CabañasSection() {
             <h2 className='text-custom-green text-[2.8rem] text-center'>Descubre tu refugio perfecto en la naturaleza.</h2>
 
             <p className='text-dark text-[1.1rem] pb-8 text-justify '>
-              Explora nuestras habitaciones a los pies de la montaña, en el centro del melocoton.
-              Comodidades de lujo, y una paz inigualables. Sumérgete en una experiencia única de relajación y confort.
+              Explora nuestras habitaciones a los pies de la montaña, en el centro del Melocotón.
+              Comodidades de lujo, y una paz inigualable. Sumérgete en una experiencia única de relajación y confort.
             </p>
             <div className='pt-6'>
             <motion.button className="bg-custom-green text-white  py-2 px-8 rounded-[1rem] shadow-md hover:bg-green-700 hover:text-yellow-500 "
@@ -48,9 +49,9 @@ function CabañasSection() {
       <div className="flex flex-col justify-center items-center sm:flex sm:flex-row gap-4 w-full lg:w-[50%]">
         {images.map((image, index) => (
            <Link href={`/cabanas/${image.link}`} key={index}>
-          <div key={index} className='relative flex flex-col  justify-center items-center group'>
+          <div key={index} className='relative flex flex-col  justify-center items-center group w-full'>
             <motion.div
-              className="relative overflow-hidden rounded-[10px] h-[20rem] w-full"
+              className="relative overflow-hidden rounded-[10px] h-[20rem] w-[25rem] sm:w-[14rem] "
               whileHover={{ scale: 1.05 }}
               transition={{ duration: 0.3 }}
             >

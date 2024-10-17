@@ -1,14 +1,23 @@
 "use client";
 
-import Image from "next/legacy/image";
-import { motion, useInView, useScroll, useTransform } from "framer-motion";
-import { SectionWrapper } from "../hoc/index.js";
-import { fadeIn } from "../utils/motion.js";
+import {
+  useEffect,
+  useRef,
+  useState,
+} from 'react';
 
-import { useRef, useState, useEffect } from "react";
+import {
+  motion,
+  useInView,
+  useScroll,
+  useTransform,
+} from 'framer-motion';
+import Image from 'next/legacy/image';
 
-import img1 from "../../public/assets/img/front/fachada_home.jpg";
-import img2 from "../../public/assets/img/front/front-vertical.jpg";
+import img1 from '../../public/assets/img/front/fachada_home.jpg';
+import img2 from '../../public/assets/img/front/front-vertical.jpg';
+import { SectionWrapper } from '../hoc/index.js';
+import { fadeIn } from '../utils/motion.js';
 
 function Section() {
   const ref = useRef(null);
@@ -43,7 +52,7 @@ function Section() {
   }, []);
 
   return (
-    <div className="flex flex-col-reverse justify-center items-center xl:flex-row w-screen min-h-screen lg:h-screen relative">
+    <div className="flex flex-col-reverse justify-center items-center xl:flex-row w-screen min-h-screen lg:h-screen relative overflow-hidden">
       {/* DIV1 TEXTOS */}
       <motion.div
         className="px-12 pb-32 pt-16 lg:py-64  flex flex-col justify-center items-start h-[40%] w-full lg:w-[40%] "
@@ -60,14 +69,13 @@ function Section() {
             animate={isInView ? { clipPath: "inset(0 0 0 0)" } : {}} // Se revela solo si está en el viewport
             transition={{ duration: 1.3, ease: "easeInOut" }} // Duración y suavidad de la animación
           >
-            El escape perfecto, vive la experiencia
-            <br /> en la naturaleza.
+            El escape perfecto,
+            <br /> para vivir una experiencia en la naturaleza.
           </motion.h3>
         </div>
 
         <p className="text-black  lg:text-[1.2rem] text-[1rem] text-justify pb-">
-          El escape perfecto, para vivir una experiencia en la naturaleza. Somos
-          una empresa de ecoturismo innovadora en el rubro, la cual brinda
+          Somos una empresa de ecoturismo innovadora en el rubro, la cual brinda
           momentos y experiencias únicas e inolvidables para nuestros clientes a
           través del uso sustentable del medioambiente, sin comprometer el
           hermoso entorno natural que nos rodea y este se preserve al pasar del
@@ -78,6 +86,7 @@ function Section() {
       {/* DIV2 IMAGEN */}
 
       <motion.div
+
         variants={fadeIn("left", "spring", 0.1, 2)}
         className="relative px-12 py-[2rem] lg:py-64 flex flex-col justify-center items-start w-full lg:w-[60%]"
       >

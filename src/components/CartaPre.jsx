@@ -1,14 +1,10 @@
 "use client";
 
-import Image from "next/legacy/image";
-
-import { motion } from "framer-motion";
-import { fadeIn } from "../utils/motion.js";
+import Image from 'next/legacy/image';
 
 import img1 from '../../public/assets/img/menu/bebidas1.jpg';
-import img2 from '../../public/assets/img/menu/plato.jpg';
 import img3 from '../../public/assets/img/menu/pie_limon.jpg';
-
+import img2 from '../../public/assets/img/menu/plato.jpg';
 
 function CartaPre() {
   return (
@@ -52,7 +48,7 @@ function CartaPre() {
         />
 
         <div className="absolute inset-0 flex justify-center items-center m-4 border-0.2 border-white">
-         <h2 className="text-2xl text-white"> Postres & Cafeteria</h2>
+         <h2 className="text-2xl text-white"> Postres & Cafetería</h2>
         </div>
         
     </div>
