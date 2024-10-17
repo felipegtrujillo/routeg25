@@ -4,7 +4,7 @@
 import Image from "next/legacy/image";
 import Restauranticons from '../components/common/Restauranticons.jsx';
 import Serviceicons from '../components/common/Serviceicons.jsx';
-import ButtonVerCarta from './common/ButtonVerCarta.jsx';
+import Link from "next/link.js";
 import ButtonReservarMesa from '../components/common/ButtonReservarMesa.jsx';
 
 import { motion } from 'framer-motion';
@@ -23,7 +23,7 @@ function RestaurantSection({data}) {;
           <div className='px-12 py-12 w-full xl:w-[50%] h-auto flex flex-col justify-center items-center gap-4   '>
               <h2 className='text-custom-green text-[2rem] font-dom text-center ' >Ven a restaurar tu energía y apetito.</h2>
               <p className='text-black text-[1rem] text-center pb-[3rem]'>  
-                Restaurant Rustico a los pies de la montaña <br />
+                Restaurant Rústico a los pies de la montaña <br />
                 Ubicados en el hermoso valle del Cajón del Maipo, <br />
                  en el sector El Melocotón.
               </p>
@@ -74,7 +74,14 @@ function RestaurantSection({data}) {;
                 <Serviceicons/>
 
                 <div className='py-8'>
-                <ButtonVerCarta/>
+                <motion.button className="bg-custom-green text-white  py-2 px-6 rounded-[1rem] shadow-md hover:bg-green-700 hover:text-yellow-500 "
+                   whileHover={{ scale: 1.05 }}
+                   transition={{ duration: 0.3 }}  
+                >
+                    <Link href="/restaurant">
+                     Ver Restaurant
+                     </Link>
+                </motion.button>
 
                 </div>
               

@@ -34,7 +34,7 @@ export default function Page() {
         image="/assets/img/cabanas/bungalow_front.jpeg"
         title="Bungalow"
         subtitle="Hasta 4 Personas "
-        paragraph="Descubre nuestros 3 hermosos bungalows, perfectos para familias o pequeños grupos. Equipadas con 2 cómodas habitaciones, Camas matrimoniales y camas de 1 1/2 plaza todas con su ropa de cama, baño completo, TV satelital, calefacción a leña o eléctrica (según elección), cocina totalmente equipada, quincho y estacionamiento privado."
+        paragraph="Descubre nuestros 3 hermosos bungalows, perfectos para familias o pequeños grupos. Equipadas con 2 cómodas habitaciones, Camas matrimoniales y camas de 1 1/2 plaza todas con su ropa de cama, baño completo, TV satelital, calefacción a leña o eléctrica según elección de cabaña, cocina totalmente equipada, quincho y estacionamiento privado."
         buttonLink="/cabanas/bungalow"
         buttonText="Ver Habitación"
         tipo="Bungalow"

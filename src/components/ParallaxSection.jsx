@@ -57,7 +57,7 @@ function ParallaxSection({ image, paragraphText, titleText }) {
           style={{ y }} // Aplica la transformación basada en el scroll
           className="relative w-full h-full"
         > 
-          <Image src={image} alt="image" style={{ objectFit: "cover" }} fill />
+          <Image priority={true} src={image} alt="image" style={{ objectFit: "cover" }} fill   />
         </motion.div>
       </div>
     </div>
