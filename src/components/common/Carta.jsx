@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
 import img1 from '../../../public/assets/img/restaurant/bar.jpg';
 
@@ -23,6 +23,18 @@ const Carta = () => {
     setIsLoading(false);
     setHasError(true); // Si hay un error, activamos el estado de error
   };
+
+  useEffect(() => {
+    // Configura un temporizador para recargar la página después de 4 segundos
+    const timer = setTimeout(() => {
+      if (isLoading) {
+        window.location.reload(); // Recargar la página si todavía está cargando
+      }
+    }, 3000);
+
+    // Limpia el temporizador si el componente se desmonta o si se carga el PDF
+    return () => clearTimeout(timer);
+  }, [isLoading]); // Se ejecuta cuando cambia isLoading
 
   return (
     <div
