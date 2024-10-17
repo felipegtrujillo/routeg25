@@ -30,7 +30,7 @@ const Carta = () => {
       if (isLoading) {
         window.location.reload(); // Recargar la página si todavía está cargando
       }
-    }, 3000);
+    }, 2000);
 
     // Limpia el temporizador si el componente se desmonta o si se carga el PDF
     return () => clearTimeout(timer);
