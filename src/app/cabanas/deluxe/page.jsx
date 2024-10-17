@@ -92,7 +92,7 @@ export default async function Page() {
         checkOut="Hasta las 12:00" 
         lateCheckOut="Valor 50% de valor de 1 noche, salida hasta las 19:00" 
         precioCabaña="$100.000 por noche" 
-        precioMascota="$20.000" 
+        precioMascota="$20.000 por total estadia" 
         cabañas={cabañas}
       />
 

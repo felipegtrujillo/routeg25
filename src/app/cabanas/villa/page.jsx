@@ -87,7 +87,7 @@ const images = dataFiltrada.length > 0 ? [
 
      <DetalleCabana idCabana="villa" titulo="Ideal para familias o grupos grandes" caracteristicas={caracteristicas}
                      checkIn="A partir de las 12:00 hasta las 19:00" checkOut="Hasta las 12:00" 
-                     lateCheckOut="Valor 50% de valor de 1 noche, salida hasta las 19:00" precioAdulto="$30.000" precioNiño="$20.000 (2 a 10 años)" precioMascota="$20.000" cabañas={cabañas}/>
+                     lateCheckOut="Valor 50% de valor de 1 noche, salida hasta las 19:00" precioAdulto="$30.000 por noche" precioNiño="$20.000 por noche (2 a 10 años)" precioMascota="$20.000 por total de estadia" cabañas={cabañas}/>
 
      <CarouselCabanas images={images}/>
 
