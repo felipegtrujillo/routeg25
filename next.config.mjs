@@ -4,8 +4,12 @@ const nextConfig = {
     remotePatterns: [
       {
         protocol: 'https',
-        hostname: 'lacalchona.cl',
+        hostname: 'lacalchona.cl', 
       },
+      {
+        protocol: 'https',
+        hostname: 'administracion.lacalchona.cl',  // Agregamos el subdominio
+      }
     ],
   },
     webpack(config) {

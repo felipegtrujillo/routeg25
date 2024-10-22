@@ -13,6 +13,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html className="relative" lang="en">
+      <head>
+      <link rel="icon" type="image/svg+xml" href="/assets/img/lacalchona.svg" /> 
+      </head>
       <body className={`${montserrat.className} antialiased`}>
               {/* El contenido que se animará está envuelto en un componente cliente */}
  

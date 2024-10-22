@@ -13,7 +13,7 @@ export default async function Page() {
 
   let dataFiltrada = [];
   try {
-    const res = await axios.get('https://www.lacalchona.cl/wp-json/wp/v2/cabanas?acf_format=standard');
+    const res = await axios.get('https://www.administracion.lacalchona.cl/wp-json/wp/v2/cabanas?acf_format=standard');
     dataFiltrada = res.data.map(item => ({
       imagen1: item.acf ? item.acf.detalle1_villa: 'imagen no disponible',
       imagen2: item.acf ? item.acf.detalle2_villa: 'imagen no disponible',
@@ -85,7 +85,7 @@ const images = dataFiltrada.length > 0 ? [
          />
      </div>
 
-     <DetalleCabana idCabana="villa" titulo="Ideal para familias o grupos grandes" caracteristicas={caracteristicas}
+     <DetalleCabana idCabana="villa " titulo="Ideal para familias o grupos grandes" caracteristicas={caracteristicas}
                      checkIn="A partir de las 12:00 hasta las 19:00" checkOut="Hasta las 12:00" 
                      lateCheckOut="Valor 50% de valor de 1 noche, salida hasta las 19:00" precioAdulto="$30.000 por noche" precioNiño="$20.000 por noche (2 a 10 años)" precioMascota="$20.000 por total de estadía" cabañas={cabañas}/>
 
