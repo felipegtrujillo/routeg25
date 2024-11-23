@@ -56,6 +56,7 @@ function mainSectionTerminos() {
             <li>Se proporcionará una carga de leña de cortesía solo en temporada de invierno para calefacción. Costo de la carga de leña adicional es $10.000 (mediados de mayo hasta mediados de septiembre).</li>
             <li>Debe traer sus artículos personales como toallas, jabón, shampoo, secador de pelo, lavaloza, etc. ya que el centro turístico no hace entrega de estos artículos (las cabañas cuentan con ropa de cama para los pasajeros).</li>
             <li>El personal de las cabañas atiende de 09:30 am hasta las 19:00 pm.</li>
+            <li>Los valores de hospedaje pueden variar según la temporada del año.</li>
         </ul>
 
            </div>

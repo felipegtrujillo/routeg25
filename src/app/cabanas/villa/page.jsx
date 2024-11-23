@@ -24,7 +24,10 @@ export default async function Page() {
       imagen7: item.acf ? item.acf.detalle7_villa: 'imagen no disponible',
       imagen8: item.acf ? item.acf.detalle8_villa: 'imagen no disponible',
       imagen9: item.acf ? item.acf.detalle9_villa : 'imagen no disponible',
-      imagen10: item.acf ? item.acf.detalle10_villa: 'imagen no disponible'
+      imagen10: item.acf ? item.acf.detalle10_villa: 'imagen no disponible',
+      precio_adulto: item.acf ? item.acf.precio_adulto_villa : 'precio no disponible',
+      precio_niño: item.acf ? item.acf.precio_nino_villa : 'precio no disponible',
+      precio_mascota: item.acf ? item.acf.precio_mascota_villa : 'precio no disponible',
     }));
   } catch (error) {
     console.error("Error al obtener datos:", error);
@@ -87,7 +90,7 @@ const images = dataFiltrada.length > 0 ? [
 
      <DetalleCabana idCabana="villa " titulo="Ideal para familias o grupos grandes" caracteristicas={caracteristicas}
                      checkIn="A partir de las 12:00 hasta las 19:00" checkOut="Hasta las 12:00" 
-                     lateCheckOut="Valor 50% de valor de 1 noche, salida hasta las 19:00" precioAdulto="$30.000 por noche" precioNiño="$20.000 por noche (2 a 10 años)" precioMascota="$20.000 por total de estadía" cabañas={cabañas}/>
+                     lateCheckOut="Valor 50% de valor de 1 noche, salida hasta las 19:00" precioAdulto={dataFiltrada[0].precio_adulto}  precioNiño={dataFiltrada[0].precio_niño} precioMascota={dataFiltrada[0].precio_mascota} cabañas={cabañas}/>
 
      <CarouselCabanas images={images}/>
 

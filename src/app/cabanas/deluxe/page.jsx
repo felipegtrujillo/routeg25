@@ -22,6 +22,8 @@ export default async function Page() {
           imagen8: item.acf ? item.acf.detalle8_deluxe : 'imagen no disponible',
           imagen9: item.acf ? item.acf.detalle9_deluxe : 'imagen no disponible',
           imagen10: item.acf ? item.acf.detalle10_deluxe : 'imagen no disponible',
+          precio_cabana: item.acf ? item.acf.precio_cabana_deluxe : 'precio no disponible',
+          precio_mascota: item.acf ? item.acf.precio_mascota_deluxe : 'precio no disponible',
         }));
       } catch (error) {
         console.error("Error al obtener datos:", error);
@@ -68,6 +70,7 @@ export default async function Page() {
       
       ] : [];
 
+
   return (
     <div className="relative z-0"> 
       <div className="relative bg-no-repeat bg-center h-screen z-50"> 
@@ -91,8 +94,8 @@ export default async function Page() {
         checkIn="A partir de las 12:00 hasta las 19:00" 
         checkOut="Hasta las 12:00" 
         lateCheckOut="Valor 50% de valor de 1 noche, salida hasta las 19:00" 
-        precioCabaña="$100.000 por noche" 
-        precioMascota="$20.000 por total estadía" 
+        precioCabaña= { dataFiltrada[0].precio_cabana } 
+        precioMascota= { dataFiltrada[0].precio_mascota } 
         cabañas={cabañas}
       />
 

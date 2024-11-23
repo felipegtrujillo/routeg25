@@ -9,6 +9,7 @@ import Navbar from '../../components/common/Navbar';
 import HeroSections from '../../components/HeroSections.jsx';
 import ParallaxSection from '../../components/ParallaxSection';
 import ReservasMesasFooter from '../../components/ReservasMesaFooter';
+import GalleryRestaurant from '@/src/components/GalleryRestaurant';
 
 export default function Page() {
 
@@ -28,8 +29,8 @@ export default function Page() {
         paragraphText="Conoce en detalle nuestro menú"
         titleText="Carta"
       />
-
      <Carta/>
+     <GalleryRestaurant/>
      <ReservasMesasFooter/>
      <Footer/>
   </div>
