@@ -16,7 +16,7 @@ export const metadata = {
     images: [
       {
         url: "/lacalchona.png", // Imagen para compartir
-        width: 600,
+        width: 1200,
         height: 630,
         alt: "La Calchona - Cajón del Maipo",
       },
