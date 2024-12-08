@@ -1,5 +1,7 @@
 // app/page.tsx (o page.ts)
 
+export const dynamic = 'force-dynamic';
+
 import axios from 'axios';
 
 import CarouselCabanas from '../../../components/common/CarouselCabanas.jsx';
