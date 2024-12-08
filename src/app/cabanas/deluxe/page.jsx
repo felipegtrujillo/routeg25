@@ -1,5 +1,3 @@
-import axios from 'axios';
-
 import CarouselCabanas from '../../../components/common/CarouselCabanas.jsx';
 import DetalleCabana from '../../../components/common/DetalleCabana.jsx';
 import Footer from '../../../components/common/Footer.jsx';
@@ -8,67 +6,76 @@ import ReservasFooter from '../../../components/common/ReservasFooter.jsx';
 import ParallaxCabanasMain from '../../../components/ParallaxCabanasMain.jsx';
 
 export default async function Page() {
-      let dataFiltrada = [];
-      try {
-        const res = await axios.get('https://www.administracion.lacalchona.cl/wp-json/wp/v2/cabanas?acf_format=standard');
-        dataFiltrada = res.data.map(item => ({
-          imagen1: item.acf ? item.acf.detalle1_deluxe : 'imagen no disponible',
-          imagen2: item.acf ? item.acf.detalle2_deluxe : 'imagen no disponible',
-          imagen3: item.acf ? item.acf.detalle3_deluxe : 'imagen no disponible',
-          imagen4: item.acf ? item.acf.detalle4_deluxe : 'imagen no disponible',
-          imagen5: item.acf ? item.acf.detalle5_deluxe : 'imagen no disponible',
-          imagen6: item.acf ? item.acf.detalle6_deluxe : 'imagen no disponible',
-          imagen7: item.acf ? item.acf.detalle7_deluxe : 'imagen no disponible',
-          imagen8: item.acf ? item.acf.detalle8_deluxe : 'imagen no disponible',
-          imagen9: item.acf ? item.acf.detalle9_deluxe : 'imagen no disponible',
-          imagen10: item.acf ? item.acf.detalle10_deluxe : 'imagen no disponible',
-          precio_cabana: item.acf ? item.acf.precio_cabana_deluxe : 'precio no disponible',
-          precio_mascota: item.acf ? item.acf.precio_mascota_deluxe : 'precio no disponible',
-        }));
-      } catch (error) {
-        console.error("Error al obtener datos:", error);
-      }
+  let dataFiltrada = [];
 
-      const cabañas = [
-        'Guayacán',
-        'Maitén',
-        'Acacio',
-        'Bollenar',
-        'Peumo',
-        'Alerce',
-        'Araucaria',
-        'Espino',
-        'Sauce',
-        'Lenga',
-        'Mañio'
-      ];
+  try {
+    const res = await fetch('https://www.administracion.lacalchona.cl/wp-json/wp/v2/cabanas?acf_format=standard');
+    
+    // Verificar si la respuesta es correcta
+    if (!res.ok) {
+      throw new Error('Error en la solicitud a la API');
+    }
+    // Convertir la respuesta en JSON
+    const data = await res.json();
 
-      const caracteristicas = [
-        { nombre: 'Huéspedes', valor: "2" },
-        { nombre: 'Habitaciones', valor: "1"},
-        { nombre: 'Camas', valor: "1 de 2 plazas" },
-        { nombre: 'Cocina', valor: "Americana Equipada" },
-        { nombre: 'Estancia', valor: "Living/comedor" },
-        { nombre: 'Baños', valor: "1" },
-        { nombre: 'Calefacción', valor: "Leña o Eléctrica (según elección de cabaña)" },
-        { nombre: 'Televisión', valor: "1" },
-        { nombre: 'Quincho', valor: "1" },
-        { nombre: 'Estacionamiento', valor: "1" }
-      ];
+    // Procesar los datos como antes
+    dataFiltrada = data.map(item => ({
+      imagen1: item.acf ? item.acf.detalle1_deluxe : 'imagen no disponible',
+      imagen2: item.acf ? item.acf.detalle2_deluxe : 'imagen no disponible',
+      imagen3: item.acf ? item.acf.detalle3_deluxe : 'imagen no disponible',
+      imagen4: item.acf ? item.acf.detalle4_deluxe : 'imagen no disponible',
+      imagen5: item.acf ? item.acf.detalle5_deluxe : 'imagen no disponible',
+      imagen6: item.acf ? item.acf.detalle6_deluxe : 'imagen no disponible',
+      imagen7: item.acf ? item.acf.detalle7_deluxe : 'imagen no disponible',
+      imagen8: item.acf ? item.acf.detalle8_deluxe : 'imagen no disponible',
+      imagen9: item.acf ? item.acf.detalle9_deluxe : 'imagen no disponible',
+      imagen10: item.acf ? item.acf.detalle10_deluxe : 'imagen no disponible',
+      precio_cabana: item.acf ? item.acf.precio_cabana_deluxe : 'precio no disponible',
+      precio_mascota: item.acf ? item.acf.precio_mascota_deluxe : 'precio no disponible',
+    }));
+  } catch (error) {
+    console.error("Error al obtener datos:", error);
+  }
 
-      const images = dataFiltrada.length > 0 ? [
-        dataFiltrada[0].imagen1,
-        dataFiltrada[0].imagen2,
-        dataFiltrada[0].imagen3,
-        dataFiltrada[0].imagen4,
-        dataFiltrada[0].imagen5,
-        dataFiltrada[0].imagen6,
-        dataFiltrada[0].imagen7,
-        dataFiltrada[0].imagen8,
-        dataFiltrada[0].imagen9,
-        dataFiltrada[0].imagen10,
-      
-      ] : [];
+  const cabañas = [
+    'Guayacán',
+    'Maitén',
+    'Acacio',
+    'Bollenar',
+    'Peumo',
+    'Alerce',
+    'Araucaria',
+    'Espino',
+    'Sauce',
+    'Lenga',
+    'Mañio'
+  ];
+
+  const caracteristicas = [
+    { nombre: 'Huéspedes', valor: "2" },
+    { nombre: 'Habitaciones', valor: "1"},
+    { nombre: 'Camas', valor: "1 de 2 plazas" },
+    { nombre: 'Cocina', valor: "Americana Equipada" },
+    { nombre: 'Estancia', valor: "Living/comedor" },
+    { nombre: 'Baños', valor: "1" },
+    { nombre: 'Calefacción', valor: "Leña o Eléctrica (según elección de cabaña)" },
+    { nombre: 'Televisión', valor: "1" },
+    { nombre: 'Quincho', valor: "1" },
+    { nombre: 'Estacionamiento', valor: "1" }
+  ];
+
+  const images = dataFiltrada.length > 0 ? [
+    dataFiltrada[0].imagen1,
+    dataFiltrada[0].imagen2,
+    dataFiltrada[0].imagen3,
+    dataFiltrada[0].imagen4,
+    dataFiltrada[0].imagen5,
+    dataFiltrada[0].imagen6,
+    dataFiltrada[0].imagen7,
+    dataFiltrada[0].imagen8,
+    dataFiltrada[0].imagen9,
+    dataFiltrada[0].imagen10,
+  ] : [];
 
 
   return (
