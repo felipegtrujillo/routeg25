@@ -10,6 +10,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      screens: {
+        'xs': '430px',      // Ejemplo de breakpoint personalizado para dispositivos pequeños
+      },
       maxWidth: {
         '3xl': '48rem',  // Ejemplo de tamaño personalizado (si ya existe en tu versión)
         '4xl': '56rem',  // Tamaño mayor personalizado
