@@ -14,7 +14,7 @@ export default async function Page() {
 
   let dataFiltrada = [];
   try {
-    const res = await axios.get('https://lacalchona.cl/admin/wp-json/wp/v2/cabanas?acf_format=standard');
+    const res = await axios.get('https://api.lacalchona.cl/wp-json/wp/v2/cabanas?acf_format=standard');
     dataFiltrada = res.data.map(item => ({
       imagen1: item.acf ? item.acf.detalle1_villa: 'imagen no disponible',
       imagen2: item.acf ? item.acf.detalle2_villa: 'imagen no disponible',

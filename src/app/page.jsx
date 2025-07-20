@@ -13,7 +13,8 @@ import RestaurantSection from '../components/RestaurantSection.jsx';
 
 export default async function Page() {
 
-  const res = await axios.get('https://lacalchona.cl/admin/wp-json/wp/v2/inicio?acf_format=standard');
+  const res = await axios.get('https://api.lacalchona.cl/wp-json/wp/v2/inicio?acf_format=standard');
+  
   const dataFiltrada = res.data.map(item => ({
     titulo: item.acf ? item.acf.Titulo : 'Título no disponible',
     horario1: item.acf ? item.acf.horario1 : 'Horario no disponible',
