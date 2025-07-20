@@ -13,7 +13,7 @@ import ParallaxCabanasMain from '../../../components/ParallaxCabanasMain.jsx';
 export default async function Page() {
       let dataFiltrada = [];
       try {
-        const res = await axios.get('https://www.administracion.lacalchona.cl/wp-json/wp/v2/cabanas?acf_format=standard');
+        const res = await axios.get('https://lacalchona.cl/admin/wp-json/wp/v2/cabanas?acf_format=standard');
         dataFiltrada = res.data.map(item => ({
           imagen1: item.acf ? item.acf.detalle1_deluxe : 'imagen no disponible',
           imagen2: item.acf ? item.acf.detalle2_deluxe : 'imagen no disponible',

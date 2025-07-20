@@ -15,7 +15,7 @@ export default async function Page() {
 
   let dataFiltrada = [];
   try {
-    const res = await axios.get('https://www.administracion.lacalchona.cl/wp-json/wp/v2/cabanas?acf_format=standard');
+    const res = await axios.get('https://lacalchona.cl/admin/wp-json/wp/v2/cabanas?acf_format=standard');
     dataFiltrada = res.data.map(item => ({
       imagen1: item.acf ? item.acf.detalle1_bungalow : 'imagen no disponible',
       imagen2: item.acf ? item.acf.detalle2_bungalow : 'imagen no disponible',
@@ -87,7 +87,7 @@ export default async function Page() {
 
      <DetalleCabana idCabana="bungalow" titulo="Ideal para Familias o grupos pequeños" caracteristicas={caracteristicas}
                      checkIn="A partir de las 12:00 hasta las 19:00" checkOut="Hasta las 12:00" 
-                     lateCheckOut="Valor 50% de valor de 1 noche, salida hasta las 19:00" precioCabaña={ dataFiltrada[0].precio_cabana }  precioMascota={ dataFiltrada[0].precio_mascota }  cabañas={cabañas}/>
+                     lateCheckOut="Valor 50% de valor de 1 noche, salida hasta las 19:00" precioCabaña={ dataFiltrada[0].precio_cabana}  precioMascota={ dataFiltrada[0].precio_mascota }  cabañas={cabañas}/>
      <CarouselCabanas images={images}/>
 
      <ReservasFooter/>
