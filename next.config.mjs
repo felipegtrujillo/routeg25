@@ -8,7 +8,7 @@ const nextConfig = {
       },
       {
         protocol: 'https',
-        hostname: 'administracion.lacalchona.cl',  // Agregamos el subdominio
+        hostname: 'api.lacalchona.cl',  // Agregamos el subdominio
       }
     ],
   },
