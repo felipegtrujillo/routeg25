@@ -76,7 +76,7 @@ export default async function Page() {
        <ParallaxCabanasMain
         image="/assets/img/cabanas/bungalow3.jpeg"
         title="Bungalow"
-        subtitle="Hasta 4 personas"
+        subtitle="De 3 a 4 personas"
         paragraph="Descubre nuestros 3 hermosos bungalows, perfectos para familias o pequeños grupos. Equipadas con 2 cómodas habitaciones, Camas matrimoniales y camas de 1 1/2 plaza todas con su ropa de cama, baño completo, TV satelital, calefacción a leña o eléctrica (según elección), cocina totalmente equipada, quincho y estacionamiento privado."
         buttonLink="#bungalow"
         buttonText="Ver Prestaciones"
