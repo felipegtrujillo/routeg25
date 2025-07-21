@@ -15,8 +15,8 @@ import { fadeIn } from '../utils/motion.js';
 
 const images = [
   { src: img1, link:"deluxe", alt: "Deluxe", text: "Deluxe", additionalText: "Para 2 personas" },
-  { src: img2, link:"bungalow",alt: "Bungalow",text: "Bungalow", additionalText: "De 3 a 7 personas" },
-  { src: img3, link:"villa", alt: "Villa", text: "Villa", additionalText: "Hasta 12 personas" },
+  { src: img2, link:"bungalow",alt: "Bungalow",text: "Bungalow", additionalText: "De 3 a 4 personas" },
+  { src: img3, link:"villa", alt: "Villa", text: "Villa", additionalText: "Hasta 5 a 14 personas" },
 ];
 
 function CabañasSection() {

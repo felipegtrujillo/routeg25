@@ -37,7 +37,9 @@ export default async function Page() {
 
   const cabañas = [
     'Roble (de 5 a 7 personas)',
-    'Arrayán (de 7 a 11 personas)'
+    'Arrayán (de 7 a 11 personas)',
+    'Marmol ( de 11 a 14 personas)'
+
 
 ];
 
