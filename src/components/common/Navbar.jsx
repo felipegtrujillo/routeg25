@@ -140,7 +140,7 @@ function Navbar() {
         <div className="relative  right-[21vw] xs:left-[0] flex flex-col items-center justify-center gap-2 lg:flex-row lg:items-center lg:justify-center lg:gap-2">
         <div className="">
           <motion.button
-            className="flex items-center justify-center border text-custom-yellow font-bold py-2 px-4 rounded-[1rem] hover:bg-yellow-600 transition-colors"
+            className="flex items-center justify-center border text-custom-rojo bg-custom-crema font-bold py-2 px-4 rounded-[1rem] hover:bg-custom-crema transition-colors"
             whileHover={{ scale: 1.05 }}
             onClick={() =>
               window.open(
@@ -157,7 +157,7 @@ function Navbar() {
 
         <div className="">
           <motion.button
-            className="flex items-center justify-center border text-custom-yellow font-bold py-2 px-4 rounded-[1rem] hover:bg-yellow-600 transition-colors "
+            className="flex items-center justify-center border text-custom-rojo bg-custom-crema font-bold py-2 px-4 rounded-[1rem] hover:bg-custom-crema transition-colors "
             whileHover={{ scale: 1.05 }}
             onClick={() =>
               window.open(
