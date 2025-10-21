@@ -12,7 +12,7 @@ function MainSectionAbout() {
       <motion.div
         className="lg:w-full lg:h-full flex flex-col justify-center items-center "
         variants={fadeIn('right', "spring", 0.1, 3)}  >
-          <h3 className="text-custom-yellow text-[2.4rem] lg:text-[2.4rem] pb-2  ">Nuestra Visión</h3>
+          <h3 className="text-custom-rojo text-[2.4rem] lg:text-[2.4rem] pb-2  ">Nuestra Visión</h3>
           <p className="text-gray2 text-[1.8rem] text-center lg:text-[2.3rem]">
           Liderar la <strong> industria gastronómica y turística  </strong>
           satisfaciendo las necesidades de nuestros clientes, ofreciendo un <strong> servicio eficaz y de alta calidad.</strong>

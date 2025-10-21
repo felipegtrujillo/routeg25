@@ -28,9 +28,12 @@ module.exports = {
         'custom-gray-footer': '#EAEAFD',
         'custom-yellow': '#eed000', /* '#FFD015' */ 
         'custom-green': "#2d6234", /* '#378c52' */
+        'custom-red': '#B52800', /* '#FFD015' */ 
+        'custom-rojo': '#79341F',
         'brown': '#594949',
         'beige': '#FEF4E9',
-        'dark': '#4C4C4C'
+        'dark': '#4C4C4C',
+        "rojo": '#79341F'
       },
       backgroundImage: {
         "logo-bw" : "url('/assets/img/lacalchona.svg')",
@@ -39,7 +42,8 @@ module.exports = {
         "carta": "url('/assets/img/restaurant/bar.jpg')",
         "cabanas": "url('/assets/img/front/la_calchona.jpg')",
         "about": "url('/assets/img/front/about2.jpg')",
-        "fondo": "url('/assets/img/front/piscina.jpg')"
+        "fondo": "url('/assets/img/front/piscina.jpg')",
+        "tabla": "url('/assets/img/front/tabla_nav.png')",
       },
       borderWidth: {
         '0.2': '0.2px',

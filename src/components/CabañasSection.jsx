@@ -27,14 +27,14 @@ function CabañasSection() {
     >
       {/* DIV1 */}
       <div className='flex flex-col justify-center items-center w-full lg:w-[50%] p-12'> 
-            <h2 className='text-custom-green text-[2.8rem] text-center'>Descubre tu refugio perfecto en la naturaleza.</h2>
+            <h2 className='text-custom-rojo text-[2.8rem] text-center'>Descubre tu refugio perfecto en la naturaleza.</h2>
 
             <p className='text-dark text-[1.1rem] pb-8 text-justify '>
               Explora nuestras habitaciones a los pies de la montaña, en el centro del Melocotón.
               Comodidades de lujo, y una paz inigualable. Sumérgete en una experiencia única de relajación y confort.
             </p>
             <div className='pt-6'>
-            <motion.button className="bg-custom-green text-white  py-2 px-8 rounded-[1rem] shadow-md hover:bg-green-700 hover:text-yellow-500 "
+            <motion.button className="bg-custom-rojo text-white  py-2 px-8 rounded-[1rem] shadow-md hover:bg-custom-rojo hover:text-yellow-500 "
                    whileHover={{ scale: 1.05 }}
                    transition={{ duration: 0.3 }}  
                 >

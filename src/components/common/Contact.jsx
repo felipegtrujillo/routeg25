@@ -10,13 +10,13 @@ const Contact = () => {
         <div
           className='flex justify-center items-center pt-[8rem] md:pt-0'
        >
-        <h2 className="text-custom-green text-center text-[2.5rem] lg:text-[3rem]">Ubicación</h2>
+        <h2 className="text-custom-rojo text-center text-[2.5rem] lg:text-[3rem]">Ubicación</h2>
         <FaMapPin className='text-red-500' size={40} />
       </div>
 
     <div className="flex flex-col justify-center items-center h-full w-[80%] bg-black ">
       
-      <h3 className='text-white text-center'> La Calchona</h3>
+      <h3 className='text-white text-center'> Route G25</h3>
         <Map/>
     </div>
     </div>

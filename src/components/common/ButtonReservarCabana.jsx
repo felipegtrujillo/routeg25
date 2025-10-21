@@ -11,7 +11,7 @@ const ButtonReservarCabana = ({tipoCabana, mensajePersonalizado }) => {
 
   return (
     <motion.button
-      className="bg-custom-green text-white py-2 px-6 rounded-[1rem] shadow-md hover:bg-green-700 hover:text-yellow-500"
+      className="bg-custom-rojo text-white py-2 px-6 rounded-[1rem] shadow-md hover:bg-custom-rojo hover:text-yellow-500"
       whileHover={{ scale: 1.05 }}
       transition={{ duration: 0.3 }}
       onClick={handleClick}

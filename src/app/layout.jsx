@@ -3,7 +3,7 @@ import "./globals.css";
 import { montserrat } from "../app/ui/fonts";
 
 export const metadata = {
-  title: "La Calchona",
+  title: "Route G25",
   description:
     "Restaurant, hospedaje, alojamiento y cabañas en el Cajón del Maipo",
   icons: {
@@ -13,8 +13,8 @@ export const metadata = {
     title: "La Calchona",
     description:
       "Restaurant, hospedaje, alojamiento y cabañas en el Cajón del Maipo",
-    url: "https://lacalchona.cl",
-    siteName: "La Calchona",
+    url: "https://routeg24restaurant.cl",
+    siteName: "Route G25 ",
     images: [
       {
         url: "/lacalchona1.png", // Imagen para compartir

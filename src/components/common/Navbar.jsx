@@ -38,12 +38,12 @@ function Navbar() {
 
   return (
     <nav
-      className={`fixed top-0 w-full h-[15vh]  z-50 bg-black bg-opacity-70 flex justify-between items-center px-3 md:p-12 md:px-8 lg:p-12 text-white transition-transform duration-300 ease-in-out
+      className={`fixed top-0 w-full h-[19vh]  z-50 bg-black bg-opacity-70 flex justify-between items-center px-3 md:p-12 md:px-8 lg:p-12 text-white transition-transform duration-300 ease-in-out
      ${showNavbar ? "translate-y-0" : "-translate-y-full"}`}
     >
       {/* Logo */}
-      <div className="">
-        <LogoSVG heightMobile="15vh" heightTablet="15vh" heightDesktop="18vh" />
+      <div className=' '>
+        <LogoSVG className=''  heightMobile="15vh" heightTablet="15vh" heightDesktop="18vh" />
       </div>
 
       {/* Burger Button */}
@@ -102,7 +102,7 @@ function Navbar() {
         <li>
           <Link
             href="/"
-            className=" block  py-2 text-center hover:text-gray-400"
+            className=" block  py-2 text-center hover:text-custom-red"
           >
             Inicio
           </Link>
@@ -110,7 +110,7 @@ function Navbar() {
         <li>
           <Link
             href="/restaurant"
-            className="block  py-2 text-center hover:text-gray-400"
+            className="block  py-2 text-center hover:text-custom-red"
           >
             Restaurant
           </Link>
@@ -118,7 +118,7 @@ function Navbar() {
         <li>
           <Link
             href="/cabanas"
-            className="block text-center py-2 hover:text-gray-400"
+            className="block text-center py-2 hover:text-custom-red"
           >
             Cabañas
           </Link>
@@ -126,7 +126,7 @@ function Navbar() {
         <li>
           <Link
             href="/about"
-            className="block py-2 text-center hover:text-gray-400"
+            className="block py-2 text-center hover:text-custom-red"
           >
             Sobre Nosotros
           </Link>

@@ -32,7 +32,7 @@ function HeroSections( {name, text1, text2, text3, buttonName, idSection, isRest
 
           <div className="flex justify-center items-center gap-4">
 
-            <motion.button className="bg-custom-green text-white  py-2 px-8 rounded-[1rem] shadow-md hover:bg-green-700 hover:text-yellow-500 "
+            <motion.button className="bg-custom-rojo text-white  py-2 px-8 rounded-[1rem] shadow-md hover:bg-custom-rojo hover:text-yellow-500 "
                    whileHover={{ scale: 1.05 }}
                    transition={{ duration: 0.3 }}  
                 >

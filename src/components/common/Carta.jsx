@@ -9,7 +9,7 @@ const Carta = () => {
   const [hasError, setHasError] = useState(false); // Estado para manejar errores
 
   const pdfUrl =
-    "https://firebasestorage.googleapis.com/v0/b/lacalchona-cd046.appspot.com/o/CARTA-LA-CALCHONA.pdf?alt=media&token=b5fef067-ce63-4481-a0e7-95b5c7bbd35f";
+    "https://firebasestorage.googleapis.com/v0/b/lacalchona-cd046.appspot.com/o/CARTA-CAFETERIA.pdf?alt=media&token=32446689-c8f4-417b-b3ac-e759d2255e2c";
   const googleDocsViewerUrl = `https://docs.google.com/gview?url=${encodeURIComponent(
     pdfUrl
   )}&embedded=true`;

@@ -21,7 +21,7 @@ function RestaurantSection({data}) {;
       <div className="flex flex-col xl:flex-row ">
           {/* DIV1 */}
           <div className='px-12 py-12 w-full xl:w-[50%] h-auto flex flex-col justify-center items-center gap-4   '>
-              <h2 className='text-custom-green text-[2rem] font-dom text-center ' >Ven a restaurar tu energía y apetito.</h2>
+              <h2 className='text-custom-red text-[2rem] font-dom text-center ' >Ven a restaurar tu energía y apetito.</h2>
               <p className='text-black text-[1rem] text-center pb-[3rem]'>  
                 Restaurant Rústico a los pies de la montaña <br />
                 Ubicados en el hermoso valle del Cajón del Maipo, <br />
@@ -63,7 +63,7 @@ function RestaurantSection({data}) {;
        {/* DIV4 */}
 
        <div className='px-12 py-12 w-full lg:w-[50%] h-auto flex flex-col justify-center items-center gap-4  '>
-                <h2 className='text-custom-green text-[2rem] font-dom text-center'>
+                <h2 className='text-custom-red text-[2rem] font-dom text-center'>
                   {data[0].titulo}
                 </h2>
                 <p className='text-black text-[1rem] text-center pb-[3rem]'>
@@ -74,7 +74,7 @@ function RestaurantSection({data}) {;
                 <Serviceicons/>
 
                 <div className='py-8'>
-                <motion.button className="bg-custom-green text-white  py-2 px-6 rounded-[1rem] shadow-md hover:bg-green-700 hover:text-yellow-500 "
+                <motion.button className="bg-custom-rojo text-white  py-2 px-6 rounded-[1rem] shadow-md hover:bg-rojo hover:text-yellow-500 "
                    whileHover={{ scale: 1.05 }}
                    transition={{ duration: 0.3 }}  
                 >

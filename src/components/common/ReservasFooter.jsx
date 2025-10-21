@@ -17,7 +17,7 @@ function ReservasFooter() {
         </div>
 
         <div className="flex justify-center md:justify-start items-center  w-full sm:w-[40vw] md:pl-16 xl:w-[20vw]">
-        <motion.button className="bg-custom-green text-white  py-2 px-6 rounded-[1rem] shadow-md hover:bg-green-700 hover:text-yellow-500  "
+        <motion.button className="bg-custom-rojo text-white  py-2 px-6 rounded-[1rem] shadow-md hover:bg-custom-rojo hover:text-yellow-500  "
                    whileHover={{ scale: 1.05 }}  
                    transition={{ duration: 0.3 }}  
                    onClick={() => window.open("https://wa.me/56973990301?text=Hola,%20me%20gustaría%20obtener%20ayuda%20sobre%20una%20reserva%20de%20cabaña", "_blank")}

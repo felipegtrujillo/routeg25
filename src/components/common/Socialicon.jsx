@@ -8,7 +8,7 @@ const SocialIcons = () => {
         target="_blank"
         rel="noopener noreferrer"
         title="Instagram"
-        className="text-2xl text-white hover:text-gray-800 transition-colors"
+        className="text-2xl text-white hover:text-custom-red transition-colors"
       >
         <FaInstagram />
       </a>
@@ -17,7 +17,7 @@ const SocialIcons = () => {
         target="_blank"
         rel="noopener noreferrer"
         title="Facebook"
-        className="text-2xl text-white hover:text-gray-800 transition-colors"
+        className="text-2xl text-white hover:text-custom-red transition-colors"
       >
         <FaFacebookF />
       </a>
@@ -26,7 +26,7 @@ const SocialIcons = () => {
         target="_blank"
         rel="noopener noreferrer"
         title="TikTok"
-        className="text-2xl text-white hover:text-gray-800 transition-colors"
+        className="text-2xl text-white hover:text-custom-red transition-colors"
       >
         <FaTiktok />
       </a>

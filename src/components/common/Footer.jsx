@@ -13,7 +13,7 @@ import { MdOutlineCabin } from 'react-icons/md';
 import { TiLocation } from 'react-icons/ti';
 
 import { slideIn } from '../../utils/motion.js';
-import LogoSVG from './LogoSVG.jsx';
+import LogoSVGBY from './LogoSVGBY.jsx';
 
 const Footer = () => {
 
@@ -28,7 +28,7 @@ const Footer = () => {
                 className=""
               >
 
-                <LogoSVG heightMobile="17vh"  heightTablet="15vh" heightDesktop ="18vh"/>
+                <LogoSVGBY heightMobile="17vh"  heightTablet="15vh" heightDesktop ="80vh"/>
               </motion.div>
 
             {/* DIRECCION */}
@@ -45,24 +45,19 @@ const Footer = () => {
                 </div>
 
                <div className='flex items-center justify-center '>
-                  <TiLocation size={52} className='text-yellow-800' /> 
+                  <TiLocation size={52} className='text-custom-rojo' /> 
                   <p className='ml-4 font-montserrat text-[1rem]'>
                     Camino al Volcán 28.700, San José de Maipo, El Melocotón, RM.
                   </p>
                 </div>
  
                 <div className='flex items-center justify-center lg:justify-start '>
-                  <MdOutlineCabin size={30} className='text-yellow-800' /> 
+                  <MdOutlineCabin size={30} className='text-custom-rojo' /> 
                   <p className='ml-4 font-montserrat text-[1rem]'>
-                    Administracion@lacalchona.cl
+                    contacto@routeg25restaurant.cl
                   </p>
                 </div>
-                <div className='flex items-center justify-center lg:justify-start '>
-                  <IoRestaurant size={30} className='text-yellow-800' /> 
-                  <p className='ml-4 font-montserrat text-[1rem]'>
-                    info@lacalchona.cl
-                  </p>
-                </div>
+
              </div>
             </motion.div>
 
@@ -130,7 +125,7 @@ const Footer = () => {
                         title="Instagram"
                         className="text-2xl  hover:text-white transition-colors"
                       >
-                        <FaInstagram size={25} className='text-yellow-800' />
+                        <FaInstagram size={25} className='text-custom-rojo' />
                       </a>
                         
                     </div>
@@ -143,7 +138,7 @@ const Footer = () => {
                         title="Facebook"
                         className="text-2xl text-white hover:text-gray-800 transition-colors"
                       >
-                        <FaFacebookF  size={25} className='text-yellow-800'/>
+                        <FaFacebookF  size={25} className='text-custom-rojo'/>
                       
                       </a>
                     
@@ -156,7 +151,7 @@ const Footer = () => {
                           title="TikTok"
                           className="text-2xl text-white hover:text-gray-800 transition-colors"
                         >
-                          <FaTiktok size={25} className='text-yellow-800'/>
+                          <FaTiktok size={25} className='text-custom-rojo'/>
                         </a>
                         
                     </div>

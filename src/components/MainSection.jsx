@@ -58,8 +58,8 @@ function Section() {
         className="px-12 pb-32 pt-16 lg:py-64  flex flex-col justify-center items-start h-[40%] w-full lg:w-[40%] "
         variants={fadeIn("up", "spring", 0.1, 2)}
       >
-        <h2 className="text-custom-yellow lg:text-[1.3rem] text-[1.1rem]">
-          La Calchona
+        <h2 className="text-custom-red lg:text-[1.3rem] text-[1.1rem]">
+          Route g25
         </h2>
 
         <div ref={ref}>
