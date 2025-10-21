@@ -1,6 +1,6 @@
 import Link from 'next/link';
 
-import Logo from '../../../public/assets/img/routeg25Color.svg';
+import Logo from '../../../public/assets/img/g25.svg';
 
 const LogoSVG = ({ heightMobile , heightTablet, heightDesktop }) => {
     return (

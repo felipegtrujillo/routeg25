@@ -28,7 +28,7 @@ const Footer = () => {
                 className=""
               >
 
-                <LogoSVGBY heightMobile="17vh"  heightTablet="15vh" heightDesktop ="80vh"/>
+                <LogoSVGBY heightMobile="17vh"  heightTablet="40vh" heightDesktop ="50vh"/>
               </motion.div>
 
             {/* DIRECCION */}
