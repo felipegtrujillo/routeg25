@@ -19,6 +19,7 @@ function DetailSectionAbout() {
             variants={fadeIn('right', "spring", 0.1, 3)} >
           <div>
             <h3 className="text-custom-rojo text-[2.4rem] lg:text-[2.7rem] pb-2 w-[80%] ">Infraestructura</h3>
+            
           </div>   
 
           <div className="w-full flex items-start">

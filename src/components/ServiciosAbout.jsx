@@ -32,7 +32,8 @@ function ServiciosAbout() {
   className="w-full h-full flex flex-col justify-center items-center"
   variants={fadeIn('right', "spring", 0.1, 3)}
 >
-  <h3 className="text-custom-rojo selection:[2.4rem] lg:text-[2.7rem] pb-2 w-[80%] text-center ">Servicios Ofrecidos</h3>
+  <h3 className="text-custom-rojo text-[2.4rem] lg:text-[2.7rem] pb-2 w-[80%] text-center ">Servicios Ofrecidos</h3>
+
   <ul className="ext-gray2 text-[1.3rem] lg:text-[1.5rem] text-center font-dom pl-4 lg:pl-12">
           <li className='before:content-["•"] before:mr-2 text-start'>
             Actividades recreativas

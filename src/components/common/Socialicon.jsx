@@ -4,7 +4,7 @@ const SocialIcons = () => {
   return (
     <div className="flex space-x-4 ">
       <a
-        href="https://www.instagram.com/lacalchona.cl/"
+        href="https://www.instagram.com/routeg25.cl/"
         target="_blank"
         rel="noopener noreferrer"
         title="Instagram"
@@ -13,7 +13,7 @@ const SocialIcons = () => {
         <FaInstagram />
       </a>
       <a
-        href="https://www.facebook.com/profile.php?id=100090006671910&mibextid=LQQJ4d"
+        href="https://www.facebook.com/share/1C5Y9qhCQg/?mibextid=wwXIfr"
         target="_blank"
         rel="noopener noreferrer"
         title="Facebook"
@@ -22,7 +22,7 @@ const SocialIcons = () => {
         <FaFacebookF />
       </a>
       <a
-        href="https://www.tiktok.com/@lacalchona.cl"
+        href="https://www.tiktok.com/@routeg25?_t=ZM-90jeDIO6kGZ&_r=1"
         target="_blank"
         rel="noopener noreferrer"
         title="TikTok"

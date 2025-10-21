@@ -20,7 +20,7 @@ function Hero() {
 
         <div className="flex flex-col justify-center items-center py-[40vh]">
               <motion.h1
-                className="mt-6 uppercase text-[2.rem] md:text-[3rem] text-gray-300 font-semibold text-center font-playfair"
+                className="mt-6 uppercase text-[2.2rem] md:text-[3rem] text-gray-300 font-semibold text-center font-playfair"
                 variants={titleVariants}
                 initial="hidden"
                 animate="visible"

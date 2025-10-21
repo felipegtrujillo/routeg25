@@ -119,7 +119,7 @@ const Footer = () => {
                    <div className='flex gap-8'>
                     <div className='flex items-center pb-1'>
                         <a
-                        href="https://www.instagram.com/lacalchona.cl?igshid=MzRlODBiNWFlZA%3D%3D"
+                        href="https://www.instagram.com/routeg25.cl/"
                         target="_blank"
                         rel="noopener noreferrer"
                         title="Instagram"
@@ -132,7 +132,7 @@ const Footer = () => {
                   
                     <div className='flex items-center pb-1'>
                       <a
-                        href="https://www.facebook.com/profile.php?id=100090006671910&mibextid=LQQJ4d"
+                        href="https://www.facebook.com/share/1C5Y9qhCQg/?mibextid=wwXIfr"
                         target="_blank"
                         rel="noopener noreferrer"
                         title="Facebook"
@@ -145,7 +145,7 @@ const Footer = () => {
                     </div>
                     <div className='flex items-center pb-1'>
                         <a
-                          href="https://www.tiktok.com/@lacalchona.cl?_t=8f3pUvXhDTq&_r=1"
+                          href="https://www.tiktok.com/@routeg25?_t=ZM-90jeDIO6kGZ&_r=1"
                           target="_blank"
                           rel="noopener noreferrer"
                           title="TikTok"

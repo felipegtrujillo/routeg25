@@ -47,7 +47,7 @@ function Navbar() {
       </div>
 
       {/* Burger Button */}
-      <div className="flex items-end justify-center relative left-[12.5vw] xs:left-[15.5vw] ">
+      <div className="flex items-end justify-center relative left-[0.5vw] xs:left-[15.5vw] ">
         <button
           className="block lg:hidden p-4 text-white focus:outline-none"
           onClick={toggleMenu}
@@ -95,7 +95,7 @@ function Navbar() {
         lg:translate-y-0 transition-transform transform ease-in-out duration-500 gap-8
         ${
           isOpen
-            ? "translate-y-[128px] translate-x-[-4vw] sm:translate-x-[-8vw]"
+            ? "translate-y-[128px] translate-x-[-18vw] sm:translate-x-[-8vw]"
             : "translate-y-[-600vh] translate-x-[-40px]"
         }  `}
       >
@@ -137,7 +137,7 @@ function Navbar() {
       <div className="flex items-center justify-center gap-5">
 
           {/* botones contacto */}
-        <div className="relative  right-[12vw] xs:left-[0] flex flex-col items-center justify-center gap-2 lg:flex-row lg:items-center lg:justify-center lg:gap-2">
+        <div className="relative  right-[21vw] xs:left-[0] flex flex-col items-center justify-center gap-2 lg:flex-row lg:items-center lg:justify-center lg:gap-2">
         <div className="">
           <motion.button
             className="flex items-center justify-center border text-custom-yellow font-bold py-2 px-4 rounded-[1rem] hover:bg-yellow-600 transition-colors"

@@ -7,20 +7,20 @@ export const metadata = {
   description:
     "Restaurant, hospedaje, alojamiento y cabañas en el Cajón del Maipo",
   icons: {
-    icon: "/lacalchona.svg", // Define el ícono aquí
+    icon: "/g25.svg", // Define el ícono aquí
   },
   openGraph: {
-    title: "La Calchona",
+    title: "Route G25",
     description:
       "Restaurant, hospedaje, alojamiento y cabañas en el Cajón del Maipo",
     url: "https://routeg24restaurant.cl",
     siteName: "Route G25 ",
     images: [
       {
-        url: "/lacalchona1.png", // Imagen para compartir
+        url: "/g25.png", // Imagen para compartir
         width: 1200,
         height: 630,
-        alt: "La Calchona - Cajón del Maipo",
+        alt: " Route G25 Restaurant- Cajón del Maipo",
       },
     ],
     type: "website",
@@ -31,7 +31,7 @@ export default function RootLayout({ children }) {
   return (
     <html className="relative" lang="en">
       <head>
-        <link rel="icon" type="image/svg+xml" href="/lacalchona.svg" />
+        <link rel="icon" type="image/svg+xml" href="/g25.svg" />
       </head>
       <body className={`${montserrat.className} antialiased`}>
         {/* El contenido que se animará está envuelto en un componente cliente */}
