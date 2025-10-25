@@ -13,7 +13,7 @@ import { MdOutlineCabin } from 'react-icons/md';
 import { TiLocation } from 'react-icons/ti';
 
 import { slideIn } from '../../utils/motion.js';
-import LogoSVGBY from './LogoSVGBY.jsx';
+import LogoSVG from './LogoSVG.jsx';
 
 const Footer = () => {
 
@@ -28,7 +28,7 @@ const Footer = () => {
                 className=""
               >
 
-                <LogoSVGBY heightMobile="17vh"  heightTablet="40vh" heightDesktop ="50vh"/>
+                <LogoSVG heightMobile="17vh"  heightTablet="40vh" heightDesktop ="50vh"/>
               </motion.div>
 
             {/* DIRECCION */}
@@ -54,7 +54,7 @@ const Footer = () => {
                 <div className='flex items-center justify-center lg:justify-start '>
                   <MdOutlineCabin size={30} className='text-custom-rojo' /> 
                   <p className='ml-4 font-montserrat text-[1rem]'>
-                    contacto@routeg25restaurant.cl
+                    contacto@routeg25.cl
                   </p>
                 </div>
 
