@@ -25,7 +25,7 @@ export default async function Page() {
 
   return (
     <div className="relative z-0 bg-white ">
-      <div className="relative bg-hero bg-no-repeat bg-center h-screen">
+      <div className="relative bg-hero2 bg-cover bg-no-repeat bg-top h-screen w-screen">
         <Navbar />
         <Hero />
       </div>

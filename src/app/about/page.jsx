@@ -13,7 +13,7 @@ export default function Page() {
 
   return (
     <div className="relative z-0">
-    <div className="relative bg-about bg-no-repeat bg-center h-screen"> 
+    <div className="relative bg-about bg-no-repeat bg-center bg-cover h-screen"> 
      <Navbar/>
      <HeroSections idSection="#main" name="Sobre Nosotros" text1="Nuestra Visión" text2="Infraestructura" text3="Servicios Ofrecidos"
      buttonName="Saber más"/>

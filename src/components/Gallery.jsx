@@ -4,7 +4,7 @@ import Image from 'next/image';
 import img4 from '../../public/assets/img/cabanas/bungalow_front.jpeg';
 import img5 from '../../public/assets/img/front/about1.jpg';
 import img6 from '../../public/assets/img/front/about3.jpg';
-import img1 from '../../public/assets/img/front/about4.jpg';
+import img1 from '../../public/assets/img/front/g25sky.jpg';
 import img2 from '../../public/assets/img/front/home_front2.jpg';
 import img3 from '../../public/assets/img/restaurant/servicio.jpeg';
 import { SectionWrapper } from '../hoc';

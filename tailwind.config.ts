@@ -39,10 +39,11 @@ module.exports = {
       backgroundImage: {
         "logo-bw" : "url('/assets/img/lacalchona.svg')",
         "hero": "url('/assets/img/front/home_front.jpg')",
+        "hero2": "url('/assets/img/front/g25sky.jpg')",
         "restaurant": "url('/assets/img/restaurant/restaurant.jpg')",
         "carta": "url('/assets/img/restaurant/bar.jpg')",
         "cabanas": "url('/assets/img/cabanas/familiar.jpg')",
-        "about": "url('/assets/img/front/aboutg25.jpeg')",
+        "about": "url('/assets/img/front/routeg25.jpeg')",
         "fondo": "url('/assets/img/front/piscina.jpg')",
         "tabla": "url('/assets/img/front/tabla_nav.png')",
       },
