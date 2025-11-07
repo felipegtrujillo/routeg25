@@ -29,7 +29,7 @@ function Hero() {
                 Route G25
               </motion.h1>
 
-              <DynamicP text1="Descubre su Cocina y Naturaleza" text2="Restaurant & Cabañas " text3="A los Pies de la Montaña"></DynamicP>
+              <DynamicP  text1="Descubre su Cocina y Naturaleza" text2="Restaurant & Cabañas " text3="A los Pies de la Montaña"></DynamicP>
  
                <div className="flex justify-center items-center gap-4 px-4">
                   <ButtonVerCarta/>
