@@ -14,8 +14,8 @@ import {
 } from 'framer-motion';
 import Image from 'next/legacy/image';
 
-import img1 from '../../public/assets/img/front/fachada_home.jpg';
-import img2 from '../../public/assets/img/front/front-vertical.jpg';
+import img1 from '../../public/assets/img/front/fachada.jpeg';
+import img2 from '../../public/assets/img/front/fachada.jpeg';
 import { SectionWrapper } from '../hoc/index.js';
 import { fadeIn } from '../utils/motion.js';
 
@@ -93,11 +93,11 @@ function Section() {
         {isMobile ? (
           <div ref={container}
              style={{ y: lg }} > 
-          <Image src={img2}  className="rounded-xl" alt="La calchona" placeholder="blur" fill />
+          <Image src={img2}  className="rounded-xl opacity-120 brightness-90 contrast-40 saturate-100 " alt="Route g25" placeholder="blur" fill />
           </div>
         ) : (
           <div>
-          <Image src={img1} className="rounded-xl" alt="La calchona" placeholder="blur" fill />
+          <Image src={img1} className="rounded-xl opacity-120 brightness-90 contrast-40 saturate-100" alt="Route g25" placeholder="blur" fill />
           </div>
         )}
       </motion.div>

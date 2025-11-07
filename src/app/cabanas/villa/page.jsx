@@ -79,7 +79,7 @@ const images = dataFiltrada.length > 0 ? [
        <ParallaxCabanasMain
         image="/assets/img/cabanas/villa8.jpeg"
         title="Villa"
-        subtitle="De 5 a 11 personas"
+        subtitle="De 5 a 16 personas"
         paragraph="Descubre nuestras 2 espectaculares casonas, ideales para grupos o familias de 5 hasta 16 personas. Equipadas con
                cómodas y amplias habitaciones, camas matrimoniales y camas de 1 y 1/2 plazas con su respectiva ropa de cama, baños completos, y amplios espacios comunes
                con chimenea, bosca y TV satelital, amplias cocinas totalmente equipadas, quincho con horno de barro según elección y estacionamiento privado."

@@ -8,7 +8,7 @@ const Logo = () => {
       <Link href="/" aria-label="Vuelve al inicio/home">
         <img
           src="/assets/img/lacalchona.svg" // Ruta relativa desde /public
-          alt="Logo calchona"
+          alt="Logo Routeg25 "
           className="object-contain h-full w-full"
         />
       </Link>

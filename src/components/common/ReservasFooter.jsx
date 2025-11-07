@@ -13,7 +13,7 @@ function ReservasFooter() {
 
      <div className="flex flex-col sm:flex sm:flex-row justify-center items-center h-[60vh] w-full pl-6 md:pl-8 lg:pl-16 gap-6 md:gap-0">
         <div className="flex justify-center sm:justify-start items-center  w-full sm:w-[60vw] xl:w-[80vw]">
-            <p className="">  Ven a relajarte en la naturaleza. ¡Agenda tu estadía en cabañas la calchona hoy y comienza a contar los días!</p>   
+            <p className="">  Ven a relajarte en la naturaleza. ¡Agenda tu estadía en cabañas Route G25 hoy y comienza a contar los días!</p>   
         </div>
 
         <div className="flex justify-center md:justify-start items-center  w-full sm:w-[40vw] md:pl-16 xl:w-[20vw]">
