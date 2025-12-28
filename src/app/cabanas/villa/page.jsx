@@ -36,17 +36,17 @@ export default async function Page() {
 
 
   const cabañas = [
-    'Roble (de 5 a 7 personas)',
-    'Arrayán (de 7 a 11 personas)',
-    'Marmol ( de 11 a 14 personas)'
+    'Roble (de 5 a 8 personas)',
+    'Arrayán (de 8 a 16 personas)',
+    'Marmol ( de 5 a 10 personas)'
 
 
 ];
 
 const caracteristicas = [
-  { nombre: 'Huéspedes', valor: "5 a 11 personas" },
+  { nombre: 'Huéspedes', valor: "5 a 16 personas" },
   { nombre: 'Habitaciones', valor: "4 a 5"},
-  { nombre: 'Camas', valor: "3 a 4 de 2 plazas, 3 a 4 de 1 ½ plaza" },
+  { nombre: 'Camas', valor: "1 de 2 plazas por casona, de 6 a 14 camas individuales dependiendo de la casona "},
   { nombre: 'Cocina', valor: "Americana Equipada" },
   { nombre: 'Comedor', valor: "Independiente" },
   { nombre: 'Living', valor: "Independiente" },
