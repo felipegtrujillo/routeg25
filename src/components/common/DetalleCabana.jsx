@@ -32,7 +32,6 @@ function DetalleCabana({ idCabana, titulo, caracteristicas, checkIn, checkOut, l
     
                   <li className="text-sm text-left font-bold text-black mb-1"> Primera carga de leña de cortesía (temporada invierno)</li>
                   <li className="text-sm text-left font-bold text-black mb-1"> Acceso a la piscina (temporada verano)</li>
-                  <li className="text-sm text-left font-bold text-black mb-1"> 10% de descuento en nuestro restaurant</li>
             </ul>
         </div>
         <div>
