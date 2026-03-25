@@ -1,25 +1,25 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   images: {
+    unoptimized: true,
     remotePatterns: [
       {
         protocol: 'https',
-        hostname: 'lacalchona.cl', 
+        hostname: 'lacalchona.cl',
       },
       {
         protocol: 'https',
-        hostname: 'api.lacalchona.cl',  // Agregamos el subdominio
-      }
+        hostname: 'api.lacalchona.cl',
+      },
     ],
   },
-    webpack(config) {
-      config.module.rules.push({
-        test: /\.svg$/,
-        use: ['@svgr/webpack'],
-      });
-      return config;
-    },
-  };
-  
-  export default nextConfig;
-  
+  webpack(config) {
+    config.module.rules.push({
+      test: /\.svg$/,
+      use: ['@svgr/webpack'],
+    });
+    return config;
+  },
+};
+
+export default nextConfig;

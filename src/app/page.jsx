@@ -1,6 +1,4 @@
-export const dynamic = 'force-dynamic';
-
-import axios from 'axios';
+export const revalidate = 604800; // 7 días
 
 import CabañasSection from '../components/CabañasSection.jsx';
 import Contact from '../components/common/Contact.jsx';
@@ -12,39 +10,57 @@ import ParallaxSection from '../components/ParallaxSection';
 import RestaurantSection from '../components/RestaurantSection.jsx';
 
 export default async function Page() {
+  let dataFiltrada = [];
 
-  const res = await axios.get('https://api.lacalchona.cl/wp-json/wp/v2/inicio?acf_format=standard');
-  
-  const dataFiltrada = res.data.map(item => ({
-    titulo: item.acf ? item.acf.Titulo : 'Título no disponible',
-    horario1: item.acf ? item.acf.horario1 : 'Horario no disponible',
-    horario2: item.acf ? item.acf.horario2 : 'Horario no disponible',
-    imagen1: item.acf ? item.acf.restaurant : 'imagen no disponible',
-    imagen2: item.acf ? item.acf.cabanas : 'imagen no disponible',
-  }));
+  try {
+    const res = await fetch(
+      'https://api.lacalchona.cl/wp-json/wp/v2/inicio?acf_format=standard',
+      {
+        next: { revalidate: 604800 },
+      }
+    );
+
+    if (!res.ok) {
+      throw new Error(`Error HTTP: ${res.status}`);
+    }
+
+    const data = await res.json();
+
+    dataFiltrada = data.map((item) => ({
+      titulo: item.acf?.Titulo ?? 'Título no disponible',
+      horario1: item.acf?.horario1 ?? 'Horario no disponible',
+      horario2: item.acf?.horario2 ?? 'Horario no disponible',
+      imagen1: item.acf?.restaurant ?? null,
+      imagen2: item.acf?.cabanas ?? null,
+    }));
+  } catch (error) {
+    console.error('Error al obtener datos:', error);
+  }
+
+  const inicio = dataFiltrada[0] ?? {};
 
   return (
-    <div className="relative z-0 bg-white ">
-      <div className="relative bg-hero bg-cover  bg-left  sm:bg-bottom h-screen w-screen">
+    <div className="relative z-0 bg-white">
+      <div className="relative bg-hero bg-cover bg-left sm:bg-bottom h-screen w-screen">
         <Navbar />
         <Hero />
       </div>
 
-      <MainSection/>
+      <MainSection />
 
-        <ParallaxSection 
-          image={dataFiltrada[0].imagen1} 
-          paragraphText="Sabores que despiertan tus sentidos"
-          titleText="Restaurant & Café"
-        />
+      <ParallaxSection
+        image={inicio.imagen1}
+        paragraphText="Sabores que despiertan tus sentidos"
+        titleText="Restaurant & Café"
+      />
 
       <RestaurantSection data={dataFiltrada} />
 
-        <ParallaxSection 
-          image={dataFiltrada[0].imagen2}
-          paragraphText="Descanso a los pies de la Montaña"
-          titleText="Cabañas & Hospedaje"
-        />
+      <ParallaxSection
+        image={inicio.imagen2}
+        paragraphText="Descanso a los pies de la Montaña"
+        titleText="Cabañas & Hospedaje"
+      />
 
       <CabañasSection />
       <Contact />

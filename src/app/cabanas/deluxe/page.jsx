@@ -1,6 +1,4 @@
-export const dynamic = 'force-dynamic';
-
-import axios from 'axios';
+export const revalidate = 604800; // 7 días
 
 import CarouselCabanas from '../../../components/common/CarouselCabanas.jsx';
 import DetalleCabana from '../../../components/common/DetalleCabana.jsx';
@@ -9,70 +7,73 @@ import Navbar from '../../../components/common/Navbar.jsx';
 import ReservasFooter from '../../../components/common/ReservasFooter.jsx';
 import ParallaxCabanasMain from '../../../components/ParallaxCabanasMain.jsx';
 
-
 export default async function Page() {
-      let dataFiltrada = [];
-      try {
-        const res = await axios.get('https://api.lacalchona.cl/wp-json/wp/v2/cabanas?acf_format=standard');
-        dataFiltrada = res.data.map(item => ({
-          imagen1: item.acf ? item.acf.detalle1_deluxe : 'imagen no disponible',
-          imagen2: item.acf ? item.acf.detalle2_deluxe : 'imagen no disponible',
-          imagen3: item.acf ? item.acf.detalle3_deluxe : 'imagen no disponible',
-          imagen4: item.acf ? item.acf.detalle4_deluxe : 'imagen no disponible',
-          imagen5: item.acf ? item.acf.detalle5_deluxe : 'imagen no disponible',
-          imagen6: item.acf ? item.acf.detalle6_deluxe : 'imagen no disponible',
-          imagen7: item.acf ? item.acf.detalle7_deluxe : 'imagen no disponible',
-          imagen8: item.acf ? item.acf.detalle8_deluxe : 'imagen no disponible',
-          imagen9: item.acf ? item.acf.detalle9_deluxe : 'imagen no disponible',
-          imagen10: item.acf ? item.acf.detalle10_deluxe : 'imagen no disponible',
-          precio_cabana: item.acf ? item.acf.precio_cabana_deluxe : 'precio no disponible',
-          precio_mascota: item.acf ? item.acf.precio_mascota_deluxe : 'precio no disponible',
-        }));
-      } catch (error) {
-        console.error("Error al obtener datos:", error);
+  let dataFiltrada = [];
+
+  try {
+    const res = await fetch(
+      'https://api.lacalchona.cl/wp-json/wp/v2/cabanas?acf_format=standard',
+      {
+        next: { revalidate: 604800 }, // mismo valor
       }
+    );
 
-      const cabañas = [
-        'Guayacán',
-        'Maitén',
-        'Acacio',
-        'Bollenar',
-        'Peumo',
-        'Alerce',
-        'Araucaria',
-        'Espino',
-        'Sauce',
-        'Lenga',
-        'Mañio'
-      ];
+    if (!res.ok) {
+      throw new Error(`Error HTTP: ${res.status}`);
+    }
 
-      const caracteristicas = [
-        { nombre: 'Huéspedes', valor: "2" },
-        { nombre: 'Habitaciones', valor: "1"},
-        { nombre: 'Camas', valor: "1 de 2 plazas" },
-        { nombre: 'Cocina', valor: "Americana Equipada" },
-        { nombre: 'Estancia', valor: "Living/comedor" },
-        { nombre: 'Baños', valor: "1" },
-        { nombre: 'Calefacción', valor: "Leña o Eléctrica (según elección de cabaña)" },
-        { nombre: 'Televisión', valor: "1" },
-        { nombre: 'Quincho', valor: "1" },
-        { nombre: 'Estacionamiento', valor: "1" }
-      ];
+    const data = await res.json();
 
-      const images = dataFiltrada.length > 0 ? [
-        dataFiltrada[0].imagen1,
-        dataFiltrada[0].imagen2,
-        dataFiltrada[0].imagen3,
-        dataFiltrada[0].imagen4,
-        dataFiltrada[0].imagen5,
-        dataFiltrada[0].imagen6,
-        dataFiltrada[0].imagen7,
-        dataFiltrada[0].imagen8,
-        dataFiltrada[0].imagen9,
-        dataFiltrada[0].imagen10,
-      
-      ] : [];
+    dataFiltrada = data.map((item) => ({
+      imagen1: item.acf?.detalle1_deluxe ?? null,
+      imagen2: item.acf?.detalle2_deluxe ?? null,
+      imagen3: item.acf?.detalle3_deluxe ?? null,
+      imagen4: item.acf?.detalle4_deluxe ?? null,
+      imagen5: item.acf?.detalle5_deluxe ?? null,
+      imagen6: item.acf?.detalle6_deluxe ?? null,
+      imagen7: item.acf?.detalle7_deluxe ?? null,
+      imagen8: item.acf?.detalle8_deluxe ?? null,
+      imagen9: item.acf?.detalle9_deluxe ?? null,
+      imagen10: item.acf?.detalle10_deluxe ?? null,
+      precio_cabana: item.acf?.precio_cabana_deluxe ?? 'precio no disponible',
+      precio_mascota: item.acf?.precio_mascota_deluxe ?? 'precio no disponible',
+    }));
+  } catch (error) {
+    console.error('Error al obtener datos:', error);
+  }
 
+  const cabanas = [
+    'Guayacán','Maitén','Acacio','Bollenar','Peumo',
+    'Alerce','Araucaria','Espino','Sauce','Lenga','Mañio'
+  ];
+
+  const caracteristicas = [
+    { nombre: 'Huéspedes', valor: "2" },
+    { nombre: 'Habitaciones', valor: "1"},
+    { nombre: 'Camas', valor: "1 de 2 plazas" },
+    { nombre: 'Cocina', valor: "Americana Equipada" },
+    { nombre: 'Estancia', valor: "Living/comedor" },
+    { nombre: 'Baños', valor: "1" },
+    { nombre: 'Calefacción', valor: "Leña o Eléctrica" },
+    { nombre: 'Televisión', valor: "1" },
+    { nombre: 'Quincho', valor: "1" },
+    { nombre: 'Estacionamiento', valor: "1" }
+  ];
+
+  const primeraCabana = dataFiltrada[0] ?? {};
+
+  const images = [
+    primeraCabana.imagen1,
+    primeraCabana.imagen2,
+    primeraCabana.imagen3,
+    primeraCabana.imagen4,
+    primeraCabana.imagen5,
+    primeraCabana.imagen6,
+    primeraCabana.imagen7,
+    primeraCabana.imagen8,
+    primeraCabana.imagen9,
+    primeraCabana.imagen10,
+  ].filter(Boolean);
 
   return (
     <div className="relative z-0"> 
@@ -82,7 +83,7 @@ export default async function Page() {
           image="/assets/img/cabanas/balcon.jpeg"
           title="Deluxe"
           subtitle="Hasta 2 personas"
-          paragraph="Contamos con 11 cabañas dobles independientes, ideal para parejas. Con cama matrimonial con ropa de cama, TV satelital por cable, baño en suite y calefacción a leña ó eléctrica según elección de cabaña. Incluye cocina full equipada, quincho y estacionamiento privado."
+          paragraph="Contamos con 11 cabañas dobles independientes..."
           buttonLink="#deluxe"
           buttonText="Ver Prestaciones"
           tipo="Deluxe"
@@ -97,13 +98,12 @@ export default async function Page() {
         checkIn="A partir de las 12:00 hasta las 19:00" 
         checkOut="Hasta las 12:00" 
         lateCheckOut="Valor 50% de valor de 1 noche, salida hasta las 19:00" 
-        precioCabaña= { dataFiltrada[0].precio_cabana } 
-        precioMascota= { dataFiltrada[0].precio_mascota } 
-        cabañas={cabañas}
+        precioCabaña={primeraCabana.precio_cabana}
+        precioMascota={primeraCabana.precio_mascota}
+        cabañas={cabanas}
       />
 
       <CarouselCabanas images={images}/>
-
       <ReservasFooter/>
       <Footer/>
     </div>
