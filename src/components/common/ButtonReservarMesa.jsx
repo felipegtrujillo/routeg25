@@ -4,7 +4,10 @@ import { motion } from 'framer-motion';
 
 const ButtonReservarMesa = () => {
   const handleClick = () => {
-    window.open("https://wa.me/56957661602?text=Hola,%20Me%20gustaría%20hacer%20una%20reserva%20de%20mesa", "_blank");
+   window.open(
+  "https://wa.me/56973990301?text=%C2%A1Hola%2C%20equipo%20de%20Route%20G25%21%0AMe%20gustar%C3%ADa%20conocer%20la%20disponibilidad%20para%20reservar%20una%20mesa%20y%20saber%20qu%C3%A9%20promociones%20tienen%20disponibles.%0A%C2%A1Muchas%20gracias%21",
+  "_blank"
+);
   };
   
   return (

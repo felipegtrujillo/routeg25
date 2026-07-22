@@ -27,7 +27,7 @@ export default function Page() {
         buttonLink="/cabanas/deluxe"
         buttonText="Ver Habitación"
         tipo="Deluxe"
-        mensaje="En arrendar una cabaña delux, como lo hago ?"
+        mensaje="una cabaña Deluxe ¿Favor me podrian dar mas información?"
       />
 
       <ParallaxCabanasSections
@@ -38,7 +38,7 @@ export default function Page() {
         buttonLink="/cabanas/bungalow"
         buttonText="Ver Habitación"
         tipo="Bungalow"
-        mensaje="En arrendar una cabaña bungalow, como lo hago ?"
+        mensaje="una cabaña Bungalow ¿Favor me podrian dar mas información?"
       />
 
        <ParallaxCabanasSections
@@ -51,7 +51,7 @@ export default function Page() {
         buttonLink="cabanas/villa"
         buttonText="Ver Habitación"
         tipo="Villa"
-        mensaje="En arrendar la cabaña Villa como lo hago ?"
+        mensaje="una cabaña Villa ¿Favor me podrian dar mas información?"
       />
      <MapaCabanas/>
      <ReservasFooter/>

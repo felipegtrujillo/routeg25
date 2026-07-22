@@ -144,7 +144,7 @@ function Navbar() {
             whileHover={{ scale: 1.05 }}
             onClick={() =>
               window.open(
-                "https://wa.me/56957661602?text=Hola%21%20Me%20gustar%C3%ADa%20tener%20m%C3%A1s%20informaci%C3%B3n%20sobre%20El%20Restaurant%20y%20sus%20servicios.",
+                "https://wa.me/56973990301?text=%C2%A1Hola%2C%20equipo%20de%20Route%20G25%21%0AMe%20gustar%C3%ADa%20conocer%20la%20disponibilidad%20para%20reservar%20una%20mesa%20y%20saber%20qu%C3%A9%20promociones%20tienen%20disponibles.%0A%C2%A1Muchas%20gracias%21",
                 "_blank"
               )
             }
@@ -161,7 +161,7 @@ function Navbar() {
             whileHover={{ scale: 1.05 }}
             onClick={() =>
               window.open(
-                "https://wa.me/56973990301?text=Hola%21%20Me%20gustar%C3%ADa%20tener%20m%C3%A1s%20informaci%C3%B3n%20sobre%20las%20Cabañas.",
+                "https://wa.me/56973990301?text=%C2%A1Hola%2C%20equipo%20de%20Route%20G25%21%0AMe%20gustar%C3%ADa%20conocer%20la%20disponibilidad%20para%20reservar%20una%20caba%C3%B1a%20y%20saber%20qu%C3%A9%20promociones%20tienen%20disponibles.%0A%C2%A1Muchas%20gracias%21",
                 "_blank"
               )
             }
